@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.CPANEL_USER }}
           key: ${{ secrets.CPANEL_SSH_KEY }}
           source: "dist/*"
-          target: "/spac25.ieeensusb.org"
+          target: ${{ secrets.TARGET_FOLDER }}
 
