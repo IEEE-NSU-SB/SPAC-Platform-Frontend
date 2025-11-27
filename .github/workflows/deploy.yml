@@ -30,6 +30,7 @@ jobs:
           host: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_USER }}
           key: ${{ secrets.CPANEL_SSH_KEY }}
-          source: "dist/*"
+          source: "dist/**"
           target: ${{ secrets.TARGET_FOLDER }}
+          strip_components: 1
 
