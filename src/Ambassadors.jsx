@@ -34,18 +34,18 @@ const Ambassadors = () => {
     <>
       <div className="grid-bg">
         <SectionHeadingBG />
-        <div className="max-w-5xl mx-auto mt-30 z-10 relative ">
-          <h2 className="text-white text-[30px] font-bold">
+        <div className="max-w-5xl md:mx-auto mt-20 md:mt-30 z-10 relative">
+          <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
             SPAC 2025 Ambassadors
           </h2>
         </div>
-        <div className="grid gap-16 grid-cols-1 md:grid-cols-3 max-w-[1050px] mx-auto md:mt-55   mt-25 md:pb-30 pb-20">
+        <div className="grid gap-16 grid-cols-1 md:grid-cols-3 max-w-[1020px] mx-auto md:mt-55   mt-25 md:pb-30 pb-20">
           {ambassadors.map((ambassador, index) => (
             <>
               <div
                 key={index}
-                className="w-[90%] mx-auto md:w-[320px] h-[360px] overflow-hidden shadow-[0_8px_10px_0_rgba(0,0,0,0.3)]
- rounded-[7px] relative"
+                className="w-[90%] mx-auto md:w-[295px] h-[360px] overflow-hidden shadow-[0_8px_10px_0_rgba(0,0,0,0.3)]
+ rounded-[7px] relative z-20"
               >
                 <img
                   src={ambassador.image}
