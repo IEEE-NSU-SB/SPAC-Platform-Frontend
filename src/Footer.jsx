@@ -2,10 +2,10 @@
 const Footer = () => {
     // Links data structure
     const quickLinks = [
-        { label: "IEEE SPAC 2025 Registration", href: "#" },
-        { label: "IEEE SPAC 2025 Timeline", href: "#" },
-        { label: "IEEE NSU SB", href: "#" },
-        { label: "Contact", href: "#" },
+        { label: "IEEE SPAC 2025 Registration", href: "/registration" },
+        { label: "IEEE SPAC 2025 Timeline", href: "/timeline" },
+        { label: "IEEE NSU SB", href: "https://ieeensusb.org/" },
+        { label: "Contact", href: "/contact" },
     ];
 
     return (
