@@ -11,8 +11,8 @@ const Home = () => {
     <>
     <div className="grid-bg">
       {/* Wallpaper */}
-      <div className="relative bottom-14">
-        <img className="max-md:h-80 object-cover" src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg" alt="" />
+      <div className="relative bottom-14 bg-black">
+        <img className="max-md:w-80 md:w-280 object-cover mx-auto" src="SPAC25Logo.png" alt="" />
       </div>
       {/* What is SPAC? */}
       <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 max-md:mx-5">
@@ -24,8 +24,9 @@ const Home = () => {
             IEEE NSU Student Branch has successfully hosted the prestigious annual event of IEEE, SPAC, consecutively for the previous two years. As hundreds of student branches hold SPAx events each year, the IEEE NSU Student Branch, with no exception, aims to host the event grandly.</p>
         </div>
         <div className="w-auto h-auto rounded-[8px] overflow-hidden">
-          <img className="md:w-100 md:h-100 w-70 h-70 object-cover" src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg" />
+          <img className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10" src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg" />
         </div>
+          <img className="md:w-100 md:h-100 relative left-170 -z-0 bottom-50 scale-80 md:block hidden" src="public\img\Design01.svg" />
       </div>
     </div>
       <Collaborator></Collaborator>
