@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Collaborator from "./Collaborator";
+import Sponsors from "./Sponsors";
 
 const Home = () => {
   useEffect(() => {
@@ -6,13 +8,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="grid-bg">
+      <><div className="grid-bg">
     {/* Wallpaper */}
     <div className="relative bottom-14">
       <img src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg" alt="" />
     </div>
     {/* What is SPAC? */}
-    <div className="grid grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl py-30">
+    <div className="grid grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl mt-50">
       <div>
         <h3 className="text-4xl text-ieee-darkblue font-bold mb-8">What is SPAC?</h3>
         <p className="text-lg">The IEEE Student Professional Awareness Conference (SPAC) is a formal networking event & dinner that brings together esteemed professionals and allows them to engage with engineering and computer science students in their fields.
@@ -28,6 +30,9 @@ const Home = () => {
     <img className="z-50" src="SPACDesign1.png" alt="" />
     </div>
     </div>
+    <Collaborator></Collaborator>
+    <Sponsors></Sponsors>
+    </>
   )
 }
 
