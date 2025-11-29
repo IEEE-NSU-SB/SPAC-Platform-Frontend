@@ -37,7 +37,7 @@ const Collaborator = () => {
 
     .marquee-inner {
       display: flex;
-      gap: 40px;
+      gap: 35px;
     }
 
     .logo-item img {

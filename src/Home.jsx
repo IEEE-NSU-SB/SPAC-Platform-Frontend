@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Collaborator from "./Collaborator";
+import Sponsors from "./Sponsors";
 
 const Home = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Home = () => {
     </div>
     </div>
     <Collaborator></Collaborator>
+    <Sponsors></Sponsors>
     </>
   )
 }
