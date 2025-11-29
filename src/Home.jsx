@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Collaborator from "./Collaborator";
 
 const Home = () => {
   useEffect(() => {
@@ -6,6 +7,7 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <div className="grid-bg w-full h-screen">
     <div className="grid grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl mt-50">
       <div>
@@ -20,6 +22,8 @@ const Home = () => {
       </div>
     </div>
     </div>
+    <Collaborator></Collaborator>
+    </>
   )
 }
 
