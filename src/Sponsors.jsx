@@ -31,20 +31,20 @@ const Sponsors = () => {
 
   return (
     <div className="bg-black md:px-20 md:pb-20 md:pt-10">
-      <div className="relative md:pb-18 py-8 pl-4 text-center md:text-left">
+      <div className="relative max-w-5xl mx-auto md:pb-18 py-8 pl-4 text-center md:text-left">
         <h2 className="text-white text-[35px] font-semibold">
           Our Spon<span className="text-[#FF9D00]">sors</span>
         </h2>
         <img
           src={arrow_logo}
-          className="absolute right-195 top-10 md:block hidden"
+          className="absolute right-173 top-12 md:block hidden"
           alt=""
         />
       </div>
       {/* moddher div  */}
-      <div className="bg-[#FFFCE6E3] p-8 border-2 border-dashed rounded-xl">
+      <div className="bg-[#FFFCE6E3] max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
         {/* sponser gular parent div  */}
-        <div className="flex flex-col  md:flex-row  gap-18 flex-wrap justify-center items-center relative">
+        <div className="flex flex-col   md:flex-row  gap-25 flex-wrap justify-center items-center relative">
           {/* single div  */}
           <div className="flex flex-col items-center">
             <h2 className="text-xl text-[#002855] font-semibold mb-3">
