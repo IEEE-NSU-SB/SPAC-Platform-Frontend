@@ -44,7 +44,7 @@ const Sponsors = () => {
       {/* moddher div  */}
       <div className="bg-[#FFFCE6E3] max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
         {/* sponser gular parent div  */}
-        <div className="flex flex-col   md:flex-row  gap-25 flex-wrap justify-center items-center relative">
+        <div className="flex flex-col   md:flex-row  md:gap-25 gap-10 flex-wrap justify-center items-center relative">
           {/* single div  */}
           <div className="flex flex-col items-center">
             <h2 className="text-xl text-[#002855] font-semibold mb-3">
@@ -57,7 +57,7 @@ const Sponsors = () => {
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className="w-16 h-auto object-cover"
+                  className="md:w-16 w-13 h-auto object-cover"
                 />
               ))}
             </div>
@@ -73,7 +73,7 @@ const Sponsors = () => {
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className="w-16 h-auto object-cover"
+                  className="md:w-16 w-13 h-auto object-cover"
                 />
               ))}
             </div>
@@ -91,7 +91,7 @@ const Sponsors = () => {
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className="w-16 h-auto object-cover"
+                  className="md:w-16 w-13 h-auto object-cover"
                 />
               ))}
             </div>
@@ -108,7 +108,7 @@ const Sponsors = () => {
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className="w-16 h-auto object-cover"
+                  className="md:w-16 w-13 h-auto object-cover"
                 />
               ))}
             </div>
@@ -125,7 +125,7 @@ const Sponsors = () => {
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className="w-16 h-auto object-cover"
+                  className="md:w-16 w-13 h-auto object-cover"
                 />
               ))}
             </div>
