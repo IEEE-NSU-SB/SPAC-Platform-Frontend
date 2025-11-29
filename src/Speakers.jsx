@@ -29,13 +29,13 @@ const Speakers = () => {
   return (
     <div className="grid-bg">
       <SectionHeadingBG />
-      <div className="max-w-5xl md:mx-auto mt-20 md:mt-30 z-10 relative">
+      <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
         <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
           SPAC 2025 Speakers
         </h2>
       </div>
 
-      <div className="max-w-5xl mx-auto mt-30 space-y-10 relative z-20 pb-20">
+      <div className="max-w-5xl mx-auto md:mt-30 mt-10 space-y-10 relative z-20 pb-20">
         {speakersData.map((speaker, index) => (
           <div
             key={index}
@@ -45,7 +45,7 @@ const Speakers = () => {
             <img
               src={speaker.image}
               alt={speaker.name}
-              className="md:w-[200px] md:h-[240px] object-cover rounded-[10px]"
+              className="md:w-[220px] md:h-auto object-cover rounded-[10px]"
             />
 
             <div className='flex flex-col justify-between'>
@@ -55,7 +55,7 @@ const Speakers = () => {
               </h3>
               <p className="text-[16px] font-semibold leading-none mt-1 mb-3">{speaker.title}</p>
               </div>
-              <p className="text-[15px] font-light leading-none text-justify tracking-normal whitespace-pre-line">
+              <p className="text-[15px] font-light text-justify tracking-normal whitespace-pre-line">
                 {speaker.description}
               </p>
             </div>

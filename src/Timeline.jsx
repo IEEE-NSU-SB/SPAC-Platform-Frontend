@@ -38,23 +38,23 @@ const Timeline = () => {
     <>
       <div className="grid-bg">
         <SectionHeadingBG />
-        <div className="max-w-5xl md:mx-auto mt-20 md:mt-30 z-10 relative">
+        <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
           <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
-            SPAC 2025 Event Timeline
+            Event Timeline
           </h2>
         </div>
-        <div className="max-w-[1050px] mx-auto md:mt-55 pl-10 mt-25 md:pb-30 pb-20">
+        <div className="max-w-[1050px] mx-auto md:mt-40 pl-10 mt-25 md:pb-30 pb-20">
           {scheduleData.map((data, index) => (
             <div key={index} className="flex group">
               {/* Timeline Column suru */}
               <div className="flex flex-col items-center mr-6">
                 {/* Node Circle */}
-                <div className="w-8 h-8 rounded-full bg-ieee-orange shadow-sm z-10 flex-shrink-0" />
+                <div className="w-8 h-8 rounded-full bg-ieee-yellow-75 border-4 border-ieee-darkblue shadow-sm z-10 flex-shrink-0" />
                 {/* Connecting Line (only if not the last item) */}
                 {index !== scheduleData.length - 1 && (
-                  <div className="h-23 w-px  bg-black relative mb-1">
+                  <div className="h-30 w-[2px]  bg-ieee-darkblue relative mb-1">
                     {/* Arrow Head */}
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-1/2 scale-200">
                       <svg
                         width="10"
                         height="10"

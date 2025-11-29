@@ -11,8 +11,8 @@ const navItems = [
 ];
 
 const Navbar = () => (
-  <nav className="fixed top-0 left-0 w-full z-50">
-    <div className="max-w-[1020px] mx-auto px-4 sm:px-6 lg:px-8 py-2
+  <nav className="relative w-full z-50">
+    <div className="max-w-[1020px] mx-auto px-4 sm:px-6 lg:px-8
       bg-white/90 backdrop-blur shadow-[0_2px_4px_rgba(255,255,255,0.6)]
       rounded-2xl mt-4">
       
