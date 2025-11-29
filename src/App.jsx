@@ -8,10 +8,12 @@ import Ambassadors from "./Ambassadors"
 import Registration from "./Registration"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import ScrollToTop from "./scrollToTop"
 
 const App = () => {
   return (
     <BrowserRouter>
+     <ScrollToTop /> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
