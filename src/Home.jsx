@@ -11,7 +11,7 @@ const Home = () => {
     <>
     <div className="grid-bg">
       {/* Wallpaper */}
-      <div className="relative bottom-14 bg-black">
+      <div className="relative bottom-20 bg-[url('simple.svg')] bg-no-repeat bg-center bg-cover w-auto h-[110vh] flex items-center justify-center">
         <img className="max-md:w-80 md:w-280 object-cover mx-auto" src="SPAC25Logo.png" alt="" />
       </div>
       {/* What is SPAC? */}
