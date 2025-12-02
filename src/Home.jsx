@@ -26,13 +26,50 @@ const Home = () => {
         <div className="w-auto h-auto rounded-[8px] overflow-hidden">
           <img className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10" src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg" />
         </div>
-          <img className="md:w-100 md:h-100 relative left-170 -z-0 bottom-50 scale-80 md:block hidden" src="public\img\Design01.svg" />
+
       </div>
-    </div>
+
+      {/* Goal Section */}
+      <section
+        className="w-full bg-cover bg-center py-20 text-center flex justify-center"
+        style={{
+          backgroundImage: "url('/src/assets/images/goalBackground.jpg')",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="p-6 rounded-xl max-w-3xl mx-5">
+          <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
+            Goal of SPAC '25
+          </h3>
+          <p className="md:text-lg text-gray-200 leading-relaxed">
+            To cultivate visionary leadership and professional excellence among engineering students and graduates by
+            promoting innovation, ethical values, and industry-oriented competencies essential for future global challenges.
+          </p>
+        </div>
+      </section>
+
       <Collaborator></Collaborator>
       <Sponsors></Sponsors>
-    </>
-  )
-}
 
-export default Home
+      <section className="w-full bg-black">
+        <h3 className="text-3xl md:text-5xl font-extrabold text-white py-6 text-center">
+          Last Year SPAC
+        </h3>
+
+        <div className="w-full aspect-video overflow-hidden">
+          <video
+            className="w-full h-full object-cover"
+            src="/src/assets/videos/sample.mp4"  //change the videos source
+            autoPlay
+            muted
+            playsInline
+            loop
+          />
+        </div>
+      </section>
+
+    </>
+  );
+};
+
+export default Home;
