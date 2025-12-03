@@ -39,7 +39,7 @@ const Ambassadors = () => {
             SPAC 2025 Ambassadors
           </h2>
         </div>
-        <div className="grid gap-16 grid-cols-1 md:grid-cols-3 max-w-[1020px] mx-auto md:mt-25 mt-10 md:pb-30 pb-20">
+        <div className="grid gap-16 grid-cols-1 md:grid-cols-3 max-w-[1020px] mx-auto md:mt-41 mt-25 md:pb-30 pb-20">
           {ambassadors.map((ambassador, index) => (
             <>
               <div

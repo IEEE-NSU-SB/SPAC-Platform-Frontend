@@ -49,7 +49,7 @@ const Timeline = () => {
               {/* Timeline Column suru */}
               <div className="flex flex-col items-center mr-6">
                 {/* Node Circle */}
-                <div className="w-8 h-8 rounded-full bg-ieee-orange-75 border-4 border-ieee-darkblue shadow-sm z-10 flex-shrink-0" />
+                <div className="w-8 h-8 rounded-full bg-ieee-orange-75 border-0 border-ieee-darkblue shadow-sm z-10 flex-shrink-0" />
                 {/* Connecting Line (only if not the last item) */}
                 {index !== scheduleData.length - 1 && (
                   <div className="h-30 w-[2px]  bg-ieee-darkblue relative mb-1">
