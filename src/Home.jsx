@@ -9,10 +9,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="grid-bg">
+      <div className="grid-bg pb-12">
 
         {/* Wallpaper */}
-        <div className="relative bottom-20 bg-[url('simple.svg')] bg-no-repeat bg-center bg-cover w-auto h-[110vh] flex items-center justify-center">
+        <div className="relative bottom-20 bg-[url('SPACBG.png')] bg-no-repeat bg-center bg-cover w-auto h-[110vh] flex items-center justify-center">
           <img
             className="max-md:w-80 md:w-280 object-cover mx-auto"
             src="SPAC25Logo.png"
@@ -59,7 +59,7 @@ const Home = () => {
           }}
         >
           <div className="p-6 rounded-xl max-w-3xl mx-5">
-            <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
+            <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
               Goal of SPAC '25
             </h3>
             <p className="md:text-lg text-gray-200 leading-relaxed">
@@ -75,12 +75,13 @@ const Home = () => {
         <Sponsors />
 
         {/* Last Year SPAC */}
-        <section className="w-full bg-black">
-          <h3 className="text-3xl md:text-5xl font-extrabold text-white py-6 text-center">
+        <section className="w-full">
+          <h3 className="text-2xl md:text-4xl font-extrabold text-ieee-darkblue py-10 text-center">
             Last Year SPAC
           </h3>
+        </section>
 
-          <div className="w-full aspect-video overflow-hidden">
+          <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px]">
             <video
               className="w-full h-full object-cover"
               src="/src/assets/videos/sample.mp4" // change the video source
@@ -90,7 +91,6 @@ const Home = () => {
               loop
             />
           </div>
-        </section>
 
       </div>
     </>

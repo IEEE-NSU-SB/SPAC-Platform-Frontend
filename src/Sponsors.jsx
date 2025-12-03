@@ -32,7 +32,7 @@ const Sponsors = () => {
   return (
     <div className="bg-black md:px-20 md:pb-20 md:pt-10">
       <div className="relative max-w-5xl mx-auto md:pb-18 py-8 pl-4 text-center md:text-left">
-        <h2 className="text-white text-[35px] font-semibold">
+        <h2 className="text-white text-2xl md:text-4xl font-semibold">
           Our Spon<span className="text-[#FF9D00]">sors</span>
         </h2>
         <img
@@ -51,7 +51,7 @@ const Sponsors = () => {
               Platinum
             </h2>
             {/* Image container */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {sponsorData.platinum.map((item) => (
                 <img
                   key={item.id}
@@ -67,7 +67,7 @@ const Sponsors = () => {
           <div className="flex flex-col items-center">
             <h2 className="text-xl text-[#002855] font-semibold mb-3">Gold</h2>
             {/* Image container */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {sponsorData.gold.map((item) => (
                 <img
                   key={item.id}
@@ -85,7 +85,7 @@ const Sponsors = () => {
               Silver
             </h2>
             {/* Image container */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {sponsorData.silver.map((item) => (
                 <img
                   key={item.id}
@@ -102,7 +102,7 @@ const Sponsors = () => {
               Food Partner
             </h2>
             {/* Image container */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {sponsorData.foodPartner.map((item) => (
                 <img
                   key={item.id}
@@ -119,7 +119,7 @@ const Sponsors = () => {
               T-shirt Partner
             </h2>
             {/* Image container */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {sponsorData.tshirtPartner.map((item) => (
                 <img
                   key={item.id}
