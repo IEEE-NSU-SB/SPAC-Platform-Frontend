@@ -78,12 +78,12 @@ const Home = () => {
 
         {/* Last Year SPAC */}
         <section className="w-full">
-          <h3 className="text-2xl md:text-4xl font-extrabold text-ieee-darkblue py-10 text-center">
+          <h3 className="text-2xl md:text-4xl font-extrabold text-ieee-darkblue pt-10 text-center">
             Last Year SPAC
           </h3>
         </section>
 
-          <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px]">
+          <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] py-8">
             <video
               className="w-full h-full object-cover"
               src="/src/assets/videos/sample.mp4" // change the video source
