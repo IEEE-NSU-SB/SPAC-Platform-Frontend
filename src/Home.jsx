@@ -41,7 +41,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-auto h-auto rounded-[8px] overflow-hidden">
+          <div className="w-auto h-auto rounded-[8px] overflow-hidden my-5">
             <img
               className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10"
               src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg"

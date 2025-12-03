@@ -36,7 +36,7 @@ const Timeline = () => {
             Contact
           </h2>
         </div>
-        <div className="flex max-w-[1050px] mx-auto flex-wrap justify-between md:mt-15 px-4 mt-10 md:pb-30 pb-20 z-10 relative ">
+        <div className="flex max-w-[1050px] mx-auto flex-wrap justify-between md:mt-31 px-4 mt-15 md:pb-30 pb-20 z-10 relative ">
           {scheduleData.map((data, index) => (
             <div key={index} className="flex w-[500px] items-center md:flex-row flex-col  mt-10 bg-white p-4 md:rounded-[180px_100px_180px_100px] rounded-[80px_10px_80px_10px] border-l-1 border-b-2 border-r-0  border-ieee-blue shadow-md overflow-hidden max-md:border-t-1 max-md:border-r-1">
               {/* Content Column */}

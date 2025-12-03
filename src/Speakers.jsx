@@ -35,7 +35,7 @@ const Speakers = () => {
         </h2>
       </div>
 
-      <div className="max-w-5xl mx-auto md:mt-30 mt-10 space-y-10 relative z-20 pb-20">
+      <div className="max-w-5xl mx-auto md:mt-41 mt-25 space-y-10 relative z-20 pb-20">
         {speakersData.map((speaker, index) => (
           <div
             key={index}
