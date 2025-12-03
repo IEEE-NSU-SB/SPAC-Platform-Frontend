@@ -1,3 +1,4 @@
+import FadeIn from "./FadeIn";
 import SectionHeadingBG from "./SectionHeadingBG";
 import { useEffect } from "react";
 
@@ -36,6 +37,7 @@ const Timeline = () => {
 
   return (
     <>
+    {/* <FadeIn></FadeIn> */}
       <div className="grid-bg">
         <SectionHeadingBG />
         <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
@@ -43,7 +45,8 @@ const Timeline = () => {
             Event Timeline
           </h2>
         </div>
-        <div className="max-w-[1050px] mx-auto md:mt-40 pl-10 mt-25 md:pb-30 pb-20">
+        <FadeIn>
+          <div className="max-w-[1050px] mx-auto md:mt-40 pl-10 mt-25 md:pb-30 pb-20">
           {scheduleData.map((data, index) => (
             <div key={index} className="flex group">
               {/* Timeline Column suru */}
@@ -87,6 +90,7 @@ const Timeline = () => {
             </div>
           ))}
         </div>
+        </FadeIn>
       </div>
     </>
   );
