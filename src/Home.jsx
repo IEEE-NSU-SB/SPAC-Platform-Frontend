@@ -10,18 +10,20 @@ const Home = () => {
   return (
     <>
       <div className="grid-bg pb-12">
-
-        {/* Wallpaper */}
-        <div className="relative bottom-20 bg-[url('SPACBG.png')] bg-no-repeat bg-center bg-cover w-auto h-[110vh] flex items-center justify-center">
-          <img
-            className="max-md:w-80 md:w-280 object-cover mx-auto"
-            src="SPAC25Logo.png"
-            alt=""
-          />
-        </div>
+      {/* Hero Section */}
+      <div
+        className="relative bottom-20 w-full h-[110vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('SPACBG.png')" }}
+      >
+        <img
+          className="max-md:w-80 md:w-280 object-cover mx-auto"
+          src="SPAC25Logo.png"
+          alt=""
+        />
+      </div>
 
         {/* What is SPAC? */}
-        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 max-md:mx-5">
+        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 md:pb-15 max-md:mx-5">
           <div>
             <h3 className="text-2xl md:text-4xl text-ieee-darkblue font-bold mb-8">
               What is SPAC?
@@ -41,7 +43,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-auto h-auto rounded-[8px] overflow-hidden my-5">
+          <div className="w-auto h-auto rounded-[8px] overflow-hidden my-5 max-md:mb-15">
             <img
               className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10"
               src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg"
@@ -54,7 +56,7 @@ const Home = () => {
         <section
           className="w-full bg-cover bg-center py-20 text-center flex justify-center"
           style={{
-            backgroundImage: "url('/src/assets/images/goalBackground.jpg')",
+            backgroundImage: "url('/src/assets/images/goalBackground1.jpg')",
             backgroundRepeat: "no-repeat",
           }}
         >
