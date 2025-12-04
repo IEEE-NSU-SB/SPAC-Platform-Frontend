@@ -30,7 +30,7 @@ const Sponsors = () => {
   };
 
   return (
-    <div className="bg-[#091d33] md:px-20 md:pb-20 md:pt-10">
+    <div className="bg-[#091d33] md:px-20 md:pb-30 md:pt-10">
       <div className="relative max-w-5xl mx-auto md:pb-18 py-8 pl-4 text-center md:text-left">
         <h2 className="text-white text-2xl md:text-4xl font-semibold">
           Our Spon<span className="text-[#FF9D00]">sors</span>

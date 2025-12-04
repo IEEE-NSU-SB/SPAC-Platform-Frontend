@@ -25,18 +25,18 @@ export default function SpacLoader() {
         <div className="flex items-center justify-center">
           <div className="flex flex-col items-center gap-6 md:gap-10">
             {/* logo */}
-            <div className="flex items-center justify-center p-2 md:p-4">
+            {/* <div className="flex items-center justify-center p-2 md:p-4">
               <img
                 src="SPAC25Logo.png"
                 alt="SPAC logo"
                 className="logoPulse w-[220px] md:w-[520px] max-w-full h-auto"
                 style={{ willChange: 'transform, filter' }}
               />
-            </div>
+            </div> */}
 
             {/* loader text / ring on larger screens */}
-            <div className="hidden md:flex flex-col items-start">
-              <div className="mt-1 text-sky-300 text-sm uppercase tracking-widest">Student · Professional · Awareness · Conference</div>
+            <div className="flex flex-col items-start">
+              <div className="mt-1 text-sky-300 text-2xl uppercase tracking-widest">SPAC 2025</div>
             </div>
           </div>
         </div>
