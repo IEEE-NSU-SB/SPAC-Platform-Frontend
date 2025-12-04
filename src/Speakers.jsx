@@ -1,20 +1,75 @@
+import FadeIn from './FadeIn';
 import SectionHeadingBG from './SectionHeadingBG'
 import { useEffect } from "react";
 
+const speakersData = [
+  {
+    name: "Dr. Nabeel Mohammad",
+    title: "Associate Professor",
+    image: "src/assets/images/speaker1.png",
+    description: `Dr. Nabeel Mohammad is a distinguished academic and researcher with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
+Dr. Nabeel’s current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
+He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
+  },
+  {
+    name: "Dr. Nabeel Mohammad",
+    title: "Associate Professor",
+    image: "src/assets/images/speaker1.png",
+    description: `Dr. Nabeel Mohammad is a distinguished academic and researcher with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
+Dr. Nabeel’s current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
+He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
+  },
+];
+
 const Speakers = () => {
+
   useEffect(() => {
     document.title = "Speakers | SPAC 2025";
   }, []);
 
   return (
-    <>
-    <SectionHeadingBG />
-    <div className="max-w-5xl md:mx-auto mt-20 md:mt-30 z-10 relative">
-        <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>SPAC 2025 Speakers</h2>
-    </div>
-    <div className="grid-bg w-full h-screen"></div>
-    </>
-  )
-}
+    <div className="grid-bg">
+      <SectionHeadingBG />
+      <div className="max-w-5xl md:mx-auto z-10 relative">
+        <FadeIn>
+          <h2 className='text-white text-center mt-30 md:mt-45 md:text-left text-[24px] md:text-[30px] font-bold'>
+            SPAC 2025 Speakers
+          </h2>
+        </FadeIn>
+      </div>
 
-export default Speakers
+      <FadeIn>
+        <div className="max-w-5xl mx-auto md:mt-41 mt-25 space-y-10 relative z-20 pb-20">
+          {speakersData.map((speaker, index) => (
+            <div
+              key={index}
+              className="bg-white border border-[#C0C0C0] rounded-[10px] 
+          shadow-md shadow-black/25 p-4 flex flex-col md:flex-row gap-6 max-md:mx-4"
+            >
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="md:w-[220px] md:h-auto object-cover rounded-[8px]"
+              />
+
+              <div className='flex flex-col justify-between'>
+                <div>
+                  <h3 className="md:text-[24px] text-[20px] font-semibold leading-none">
+                    {speaker.name}
+                  </h3>
+                  <p className="text-[16px] font-semibold leading-none mt-1 mb-3">{speaker.title}</p>
+                </div>
+                <p className="text-[15px] font-light text-justify tracking-normal whitespace-pre-line">
+                  {speaker.description}
+                </p>
+              </div>
+            </div>
+          ))}
+
+        </div>
+      </FadeIn>
+    </div>
+  );
+};
+
+export default Speakers;
