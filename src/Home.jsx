@@ -10,20 +10,20 @@ const Home = () => {
   return (
     <>
       <div className="grid-bg pb-12">
-      {/* Hero Section */}
-      <div
-        className="relative bottom-20 w-full md:h-[110vh] h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('SPACBG.png')" }}
-      >
-        <img
-          className="max-md:w-80 md:w-280 object-cover mx-auto"
-          src="SPAC25Logo.png"
-          alt=""
-        />
-      </div>
+        {/* Hero Section */}
+        <div
+          className="relative bottom-20 w-full md:h-[110vh] h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+          style={{ backgroundImage: "url('SPACBG.png')" }}
+        >
+          <img
+            className="max-md:w-80 md:w-280 object-cover mx-auto"
+            src="SPAC25Logo.png"
+            alt=""
+          />
+        </div>
 
         {/* What is SPAC? */}
-        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 md:pb-15 max-md:mx-5">
+        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:pb-18 max-md:mx-5">
           <div>
             <h3 className="text-2xl md:text-4xl text-ieee-darkblue font-bold mb-8">
               What is SPAC?
@@ -43,10 +43,10 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-auto h-auto rounded-[8px] overflow-hidden my-5 max-md:mb-15">
+          <div className="w-auto h-auto rounded-[8px] shadow-[0_8px_10px_0_rgba(0,0,0,0.3)] overflow-hidden my-5 max-md:mb-15">
             <img
-              className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10"
-              src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg"
+              className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10 hover:scale-105 transition-all ease-in-out duration-300"
+              src="WhatIsSPAC.png"
               alt=""
             />
           </div>
@@ -87,16 +87,16 @@ const Home = () => {
           </h3>
         </section>
 
-          <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] md:py-12 py-4">
-            <video
-              className="w-full h-full object-cover"
-              src="/src/assets/videos/sample.mp4" // change the video source
-              autoPlay
-              muted
-              playsInline
-              loop
-            />
-          </div>
+        <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] md:my-12 my-4">
+          <video
+            className="w-full h-full object-cover"
+            src="/src/assets/videos/sample.mp4" // change the video source
+            autoPlay
+            muted
+            playsInline
+            loop
+          />
+        </div>
 
       </div>
     </>
