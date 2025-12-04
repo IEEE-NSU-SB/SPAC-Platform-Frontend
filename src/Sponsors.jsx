@@ -132,11 +132,28 @@ const Sponsors = () => {
           </div>
           {/* star logo div  */}
           <div className="absolute -bottom-18 -right-19 md:block hidden">
-            <img src={star_logo} alt="" />
+            <img
+              src={star_logo}
+              alt=""
+              className="animate-spin-slow"
+              style={{
+                animation: "spin 8s linear infinite",
+              }}
+            />
           </div>
         </div>
       </div>
+      <style>
+      {`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}
+      </style>
+
     </div>
+    
   );
 };
 

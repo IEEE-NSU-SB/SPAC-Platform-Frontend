@@ -12,7 +12,7 @@ const Home = () => {
       <div className="grid-bg pb-12">
       {/* Hero Section */}
       <div
-        className="relative bottom-20 w-full h-[110vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+        className="relative bottom-20 w-full md:h-[110vh] h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: "url('SPACBG.png')" }}
       >
         <img
@@ -28,7 +28,7 @@ const Home = () => {
             <h3 className="text-2xl md:text-4xl text-ieee-darkblue font-bold mb-8">
               What is SPAC?
             </h3>
-            <p className="md:text-lg">
+            <p className="md:text-lg text-justify">
               The IEEE Student Professional Awareness Conference (SPAC) is a
               formal networking event & dinner that brings together esteemed
               professionals and allows them to engage with engineering and
@@ -54,7 +54,7 @@ const Home = () => {
 
         {/* Goal Section */}
         <section
-          className="relative w-full h-[40vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+          className="relative w-full md:h-[40vh] flex items-center justify-center bg-fixed bg-center bg-cover"
           style={{
             backgroundImage: "url('/src/assets/images/goalBackground1.jpg')",
           }}
@@ -62,12 +62,12 @@ const Home = () => {
           {/* Overlay for readability */}
           <div className="absolute inset-0 bg-black/40" />
 
-          <div className="relative p-6 rounded-xl max-w-3xl mx-5 text-center">
+          <div className="relative md:p-6 py-15 rounded-xl max-w-3xl mx-5 text-center">
             <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Goal of SPAC '25
             </h3>
 
-            <p className="md:text-lg text-gray-200 leading-relaxed">
+            <p className="md:text-lg text-gray-200">
               To cultivate visionary leadership and professional excellence among
               engineering students and graduates by promoting innovation, ethical
               values, and industry-oriented competencies essential for future
