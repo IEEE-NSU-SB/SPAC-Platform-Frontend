@@ -44,7 +44,13 @@ const Footer = () => {
 
                 {/* Bottom Section: Copyright */}
                 <div className="text-center text-xs text-gray-200">
-                    © {new Date().getFullYear()} IEEE NSU SB - All rights reserved. Developed by -  IEEE NSU SB Web Development Team
+                    © {new Date().getFullYear()} IEEE NSU SB - All rights reserved. Developed by 
+                    <a 
+                        href="https://ieeensusb.org/team/website-development/" 
+                        className="text-gray-300 hover:text-blue-400 transition-colors duration-200 ml-1 underline"
+                    >
+                        IEEE NSU SB Web Development Team
+                    </a>
                 </div>
             </div>
         </footer>

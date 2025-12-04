@@ -5,7 +5,7 @@ const FadeIn = ({
   children,
   className = "",
   delay = 0,
-  duration = 1,
+  duration = 0.8,
   zIndex = 0,
   xIndex = 0,
   yIndex = 20,

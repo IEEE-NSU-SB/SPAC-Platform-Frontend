@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+/* Cinzel font  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import "tailwindcss";
 
 body {
   font-family: 'Instrument Sans', sans-serif;
 }
-/* Cinzel font  */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 .cinzel{
   font-family: "Cinzel", serif;
 }
