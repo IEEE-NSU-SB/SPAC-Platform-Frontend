@@ -30,7 +30,7 @@ const Home = () => {
               <h2 className="text-center text-white text-6xl font-bold">
                 29th December, 2025
               </h2>
-              {/* text white kore niyen cinzel font diye disi  */}
+              {/* text white kore niyen cinzel font diye disi */}
               <h2 className="text-center text-6xl my-6  cinzel font-bold">
                 North South University
               </h2>
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         {/* What is SPAC? */}
-        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 md:pb-15 max-md:mx-5">
+        <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:pb-18 max-md:mx-5">
           <div>
             <h3 className="text-2xl md:text-4xl text-ieee-darkblue font-bold mb-8">
               What is SPAC?
@@ -69,10 +69,10 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-auto h-auto rounded-[8px] overflow-hidden my-5 max-md:mb-15">
+          <div className="w-auto h-auto rounded-[8px] shadow-[0_8px_10px_0_rgba(0,0,0,0.3)] overflow-hidden my-5 max-md:mb-15">
             <img
-              className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10"
-              src="https://api.ieeensusb.org/media_files/Event_Banner_Image/Student_Professional_Awarness_Conference_SPAC_2024.jpeg"
+              className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10 hover:scale-105 transition-all ease-in-out duration-300"
+              src="WhatIsSPAC.png"
               alt=""
             />
           </div>
