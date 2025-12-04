@@ -27,14 +27,13 @@ const Home = () => {
             <h2 className="text-center text-white text-5xl font-bold">
               29th December, 2025
             </h2>
-            {/* text white kore niyen cinzel font diye disi  */}
-            <h2 className="text-center text-5xl my-6  cinzel font-bold">
+            <h2 className="text-center text-white text-5xl my-6  cinzel font-bold">
               North South University
             </h2>
             <div className="flex items-center justify-center">
               <Link
                 to="/registration"
-                className="bg-[#d1e3f84a] px-18 py-8 text-3xl rounded-full text-white cursor-pointer 
+                className="bg-[#d1e3f84a] px-18 py-8  text-3xl rounded-full text-white cursor-pointer 
              hover:bg-[#265E97] transition-all duration-300
           hover:scale-102 "
               >
