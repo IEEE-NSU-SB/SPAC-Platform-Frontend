@@ -48,9 +48,9 @@ const Collaborator = () => {
   `;
 
   return (
-    <div className="w-full  py-8">
+    <div className="w-full bg-white md:px-6 py-15">
       <style>{styles}</style>
-      <h2 className="text-[35px] text-[#002855] pb-4 font-bold text-center">Collaborators</h2>
+      <h2 className="text-2xl md:text-4xl text-[#002855] pb-14 font-bold text-center">Collaborators</h2>
 
       <div className="marquee-wrapper">
         <div className="marquee-group">

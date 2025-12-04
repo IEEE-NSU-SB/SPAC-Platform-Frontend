@@ -1,3 +1,4 @@
+import FadeIn from './FadeIn';
 import SectionHeadingBG from './SectionHeadingBG'
 import { useEffect } from "react";
 
@@ -29,40 +30,44 @@ const Speakers = () => {
   return (
     <div className="grid-bg">
       <SectionHeadingBG />
-      <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
-        <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
-          SPAC 2025 Speakers
-        </h2>
+      <div className="max-w-5xl md:mx-auto z-10 relative">
+        <FadeIn>
+          <h2 className='text-white text-center mt-30 md:mt-45 md:text-left text-[24px] md:text-[30px] font-bold'>
+            SPAC 2025 Speakers
+          </h2>
+        </FadeIn>
       </div>
 
-      <div className="max-w-5xl mx-auto md:mt-30 mt-10 space-y-10 relative z-20 pb-20">
-        {speakersData.map((speaker, index) => (
-          <div
-            key={index}
-            className="bg-white border border-[#C0C0C0] rounded-[10px] 
+      <FadeIn>
+        <div className="max-w-5xl mx-auto md:mt-41 mt-25 space-y-10 relative z-20 pb-20">
+          {speakersData.map((speaker, index) => (
+            <div
+              key={index}
+              className="bg-white border border-[#C0C0C0] rounded-[10px] 
           shadow-md shadow-black/25 p-4 flex flex-col md:flex-row gap-6 max-md:mx-4"
-          >
-            <img
-              src={speaker.image}
-              alt={speaker.name}
-              className="md:w-[220px] md:h-auto object-cover rounded-[10px]"
-            />
+            >
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="md:w-[220px] md:h-auto object-cover rounded-[8px]"
+              />
 
-            <div className='flex flex-col justify-between'>
-              <div>
-              <h3 className="md:text-[24px] text-[20px] font-semibold leading-none">
-                {speaker.name}
-              </h3>
-              <p className="text-[16px] font-semibold leading-none mt-1 mb-3">{speaker.title}</p>
+              <div className='flex flex-col justify-between'>
+                <div>
+                  <h3 className="md:text-[24px] text-[20px] font-semibold leading-none">
+                    {speaker.name}
+                  </h3>
+                  <p className="text-[16px] font-semibold leading-none mt-1 mb-3">{speaker.title}</p>
+                </div>
+                <p className="text-[15px] font-light text-justify tracking-normal whitespace-pre-line">
+                  {speaker.description}
+                </p>
               </div>
-              <p className="text-[15px] font-light text-justify tracking-normal whitespace-pre-line">
-                {speaker.description}
-              </p>
             </div>
-          </div>
-        ))}
+          ))}
 
-      </div>
+        </div>
+      </FadeIn>
     </div>
   );
 };
