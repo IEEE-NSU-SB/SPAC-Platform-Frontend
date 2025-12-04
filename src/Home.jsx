@@ -99,7 +99,7 @@ const Home = () => {
         <div className="md:max-w-5xl lg:mx-auto aspect-video overflow-hidden mx-3 rounded-[12px] md:my-12 my-4">
           <video
             className="w-full h-full object-cover"
-            src="/src/assets/videos/sample.mp4" // change the video source
+            src="https://api.ieeensusb.org/media_files/main_website_files/homepage/landing_video/compress.mp4" // change the video source
             autoPlay
             muted
             playsInline
