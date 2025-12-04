@@ -17,7 +17,7 @@ const Home = () => {
         >
           <img
             className="max-md:w-80 md:w-280 object-cover mx-auto"
-            src="SPAC25Logo.png"
+            src="SPAC25LogoMin.png"
             alt=""
           />
         </div>

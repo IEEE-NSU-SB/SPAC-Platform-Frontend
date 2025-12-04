@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
@@ -14,16 +14,18 @@ import ScrollToTop from "./scrollToTop";
 import SpacLoader from "./SpacLoader"; // <-- your loader
 
 const App = () => {
-  const [loading, setLoading] = React.useState(true);
+const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    // Wait for all assets (images, CSS, fonts) to load
+    const handleLoad = () => setLoading(false);
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  // show loader first
+  // Show loader until all assets are fully loaded
   if (loading) return <SpacLoader />;
-
   return (
     <BrowserRouter>
       <ScrollToTop />
