@@ -40,7 +40,7 @@ const Timeline = () => {
     {/* <FadeIn></FadeIn> */}
       <div className="grid-bg">
         <SectionHeadingBG />
-        <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
+        <div className="max-w-5xl md:mx-auto mt-10 md:mt-25 z-10 relative">
           <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
             Event Timeline
           </h2>

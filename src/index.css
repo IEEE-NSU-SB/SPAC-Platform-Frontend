@@ -4,6 +4,12 @@
 body {
   font-family: 'Instrument Sans', sans-serif;
 }
+/* Cinzel font  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+.cinzel{
+  font-family: "Cinzel", serif;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

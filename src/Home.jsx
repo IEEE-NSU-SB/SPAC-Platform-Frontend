@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Collaborator from "./Collaborator";
 import Sponsors from "./Sponsors";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -10,17 +11,42 @@ const Home = () => {
   return (
     <>
       <div className="grid-bg pb-12">
-      {/* Hero Section */}
-      <div
-        className="relative bottom-20 w-full h-[110vh] flex items-center justify-center bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('SPACBG.png')" }}
-      >
-        <img
-          className="max-md:w-80 md:w-280 object-cover mx-auto"
-          src="SPAC25Logo.png"
-          alt=""
-        />
-      </div>
+        {/* Hero Section */}
+        <div
+          className="relative bottom-20 w-full md:h-[110vh] h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+          style={{ backgroundImage: "url('SPACBG.png')" }}
+        >
+          <div className="flex flex-col">
+            {/* image part  */}
+            <div>
+              <img
+                className="max-md:w-80 md:w-280 object-cover mx-auto"
+                src="SPAC25Logo.png"
+                alt=""
+              />
+
+              {/* text part  */}
+
+              <h2 className="text-center text-white text-6xl font-bold">
+                29th December, 2025
+              </h2>
+              {/* text white kore niyen cinzel font diye disi  */}
+              <h2 className="text-center text-6xl my-6  cinzel font-bold">
+                North South University
+              </h2>
+              <div className="flex items-center justify-center">
+                <Link
+                  to="/registration"
+                  className="bg-[#193D66] px-4 py-4 text-6xl rounded text-white cursor-pointer 
+             hover:bg-[#265E97] transition-all duration-300
+          hover:scale-102 "
+                >
+                  Register Now
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* What is SPAC? */}
         <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:py-5 md:pb-15 max-md:mx-5">
@@ -28,7 +54,7 @@ const Home = () => {
             <h3 className="text-2xl md:text-4xl text-ieee-darkblue font-bold mb-8">
               What is SPAC?
             </h3>
-            <p className="md:text-lg">
+            <p className="md:text-lg text-justify">
               The IEEE Student Professional Awareness Conference (SPAC) is a
               formal networking event & dinner that brings together esteemed
               professionals and allows them to engage with engineering and
@@ -37,9 +63,9 @@ const Home = () => {
               SPAC is one of the three Student Professional Awareness programs
               offered by IEEE. IEEE NSU Student Branch has successfully hosted
               the prestigious annual event of IEEE, SPAC, consecutively for the
-              previous two years. As hundreds of student branches hold SPAx events
-              each year, the IEEE NSU Student Branch, with no exception, aims to
-              host the event grandly.
+              previous two years. As hundreds of student branches hold SPAx
+              events each year, the IEEE NSU Student Branch, with no exception,
+              aims to host the event grandly.
             </p>
           </div>
 
@@ -54,21 +80,24 @@ const Home = () => {
 
         {/* Goal Section */}
         <section
-          className="w-full bg-cover bg-center py-20 text-center flex justify-center"
+          className="relative w-full md:h-[40vh] flex items-center justify-center bg-fixed bg-center bg-cover"
           style={{
             backgroundImage: "url('/src/assets/images/goalBackground1.jpg')",
-            backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="p-6 rounded-xl max-w-3xl mx-5">
-            <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-black/40" />
+
+          <div className="relative md:p-6 py-15 rounded-xl max-w-3xl mx-5 text-center">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Goal of SPAC '25
             </h3>
-            <p className="md:text-lg text-gray-200 leading-relaxed">
-              To cultivate visionary leadership and professional excellence among
-              engineering students and graduates by promoting innovation, ethical
-              values, and industry-oriented competencies essential for future
-              global challenges.
+
+            <p className="md:text-lg text-gray-200">
+              To cultivate visionary leadership and professional excellence
+              among engineering students and graduates by promoting innovation,
+              ethical values, and industry-oriented competencies essential for
+              future global challenges.
             </p>
           </div>
         </section>
@@ -83,17 +112,16 @@ const Home = () => {
           </h3>
         </section>
 
-          <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] md:py-12 py-4">
-            <video
-              className="w-full h-full object-cover"
-              src="/src/assets/videos/sample.mp4" // change the video source
-              autoPlay
-              muted
-              playsInline
-              loop
-            />
-          </div>
-
+        <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] md:py-12 py-4">
+          <video
+            className="w-full h-full object-cover"
+            src="/src/assets/videos/sample.mp4" // change the video source
+            autoPlay
+            muted
+            playsInline
+            loop
+          />
+        </div>
       </div>
     </>
   );

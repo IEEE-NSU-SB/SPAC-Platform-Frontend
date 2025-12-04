@@ -1,3 +1,4 @@
+import FadeIn from './FadeIn';
 import SectionHeadingBG from './SectionHeadingBG'
 import { useEffect } from "react";
 
@@ -29,12 +30,15 @@ const Speakers = () => {
   return (
     <div className="grid-bg">
       <SectionHeadingBG />
-      <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
+      <div className="max-w-5xl md:mx-auto mt-10 md:mt-25 z-10 relative">
+      <FadeIn>
         <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
           SPAC 2025 Speakers
         </h2>
+      </FadeIn>
       </div>
 
+      <FadeIn>
       <div className="max-w-5xl mx-auto md:mt-41 mt-25 space-y-10 relative z-20 pb-20">
         {speakersData.map((speaker, index) => (
           <div
@@ -63,6 +67,7 @@ const Speakers = () => {
         ))}
 
       </div>
+        </FadeIn>
     </div>
   );
 };
