@@ -34,7 +34,7 @@ const Ambassadors = () => {
     <>
       <div className="grid-bg">
         <SectionHeadingBG />
-        <div className="max-w-5xl md:mx-auto mt-10 md:mt-15 z-10 relative">
+        <div className="max-w-5xl md:mx-auto mt-10 md:mt-25 z-10 relative">
           <h2 className="text-white text-center md:text-left text-[24px] md:text-[30px] font-bold">
             SPAC 2025 Ambassadors
           </h2>
@@ -50,12 +50,12 @@ const Ambassadors = () => {
               <div
                 key={index}
                 className="w-[90%] mx-auto md:w-[295px] h-[360px] overflow-hidden shadow-[0_8px_10px_0_rgba(0,0,0,0.3)]
-rounded-[7px] relative z-20 transition-all duration-300 ease-out hover:transform hover:-translate-y-2 hover:shadow-[0_20px_30px_0_rgba(59,130,246,0.5)]"
+rounded-[7px] relative z-20 transition-all duration-300 ease-out hover:transform hover:shadow-[0_10px_15px_0_rgba(0,0,0,0.3)]"
               >
                 <img
                   src={ambassador.image}
                   alt={ambassador.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hover:scale-105 transition duration-300 ease-in-out"
                 />
                 {/* image er nicher text  */}
                 <div className="absolute bottom-0 w-full pl-4 py-3 bg-gradient-to-r from-[#E5F5FF] to-[#D3D6FF] rounded-tr-[40px]">

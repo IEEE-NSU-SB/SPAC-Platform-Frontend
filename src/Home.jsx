@@ -54,16 +54,19 @@ const Home = () => {
 
         {/* Goal Section */}
         <section
-          className="w-full bg-cover bg-center py-20 text-center flex justify-center"
+          className="relative w-full h-[40vh] flex items-center justify-center bg-fixed bg-center bg-cover"
           style={{
             backgroundImage: "url('/src/assets/images/goalBackground1.jpg')",
-            backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="p-6 rounded-xl max-w-3xl mx-5">
-            <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-black/40" />
+
+          <div className="relative p-6 rounded-xl max-w-3xl mx-5 text-center">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Goal of SPAC '25
             </h3>
+
             <p className="md:text-lg text-gray-200 leading-relaxed">
               To cultivate visionary leadership and professional excellence among
               engineering students and graduates by promoting innovation, ethical
@@ -72,6 +75,7 @@ const Home = () => {
             </p>
           </div>
         </section>
+
 
         <Collaborator />
         <Sponsors />
