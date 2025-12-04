@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Collaborator from "./Collaborator";
 import Sponsors from "./Sponsors";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -12,15 +13,33 @@ const Home = () => {
       <div className="grid-bg pb-12">
         {/* Hero Section */}
         <div
-          className="relative bottom-20 w-full md:h-[120vh] h-[80vh] flex items-center justify-center bg-fixed md:bg-bottom bg-cover"
+          className="relative bottom-20 w-full md:h-[120vh] h-[80vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover"
           style={{ backgroundImage: "url('SPACBG.png')" }}
         >
           <img
-            className="max-md:w-80 md:w-280 object-cover mx-auto"
+            className="max-md:w-80 md:w-280 object-cover mx-auto mt-50"
             src="SPAC25LogoMin.png"
             alt=""
           />
-        </div>
+            {/* text part  */}
+              <h2 className="text-center text-white text-5xl font-bold">
+                29th December, 2025
+              </h2>
+              {/* text white kore niyen cinzel font diye disi  */}
+              <h2 className="text-center text-5xl my-6  cinzel font-bold">
+                North South University
+              </h2>
+              <div className="flex items-center justify-center">
+                <Link
+                  to="/registration"
+                  className="bg-[#d1e3f84a] px-18 py-8 text-3xl rounded-full text-white cursor-pointer 
+             hover:bg-[#265E97] transition-all duration-300
+          hover:scale-102 "
+                >
+                  Register Now
+                </Link>
+              </div>
+            </div>
 
         {/* What is SPAC? */}
         <div className="grid md:grid-cols-2 justify-items-center items-center gap-4 mx-auto max-w-5xl md:pb-18 max-md:mx-5">
@@ -37,9 +56,9 @@ const Home = () => {
               SPAC is one of the three Student Professional Awareness programs
               offered by IEEE. IEEE NSU Student Branch has successfully hosted
               the prestigious annual event of IEEE, SPAC, consecutively for the
-              previous two years. As hundreds of student branches hold SPAx events
-              each year, the IEEE NSU Student Branch, with no exception, aims to
-              host the event grandly.
+              previous two years. As hundreds of student branches hold SPAx
+              events each year, the IEEE NSU Student Branch, with no exception,
+              aims to host the event grandly.
             </p>
           </div>
 
@@ -76,10 +95,10 @@ const Home = () => {
             </h3>
 
             <p className="md:text-lg text-gray-200">
-              To cultivate visionary leadership and professional excellence among
-              engineering students and graduates by promoting innovation, ethical
-              values, and industry-oriented competencies essential for future
-              global challenges.
+              To cultivate visionary leadership and professional excellence
+              among engineering students and graduates by promoting innovation,
+              ethical values, and industry-oriented competencies essential for
+              future global challenges.
             </p>
           </div>
         </section>
