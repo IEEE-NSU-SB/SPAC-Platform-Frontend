@@ -25,12 +25,14 @@ const Home = () => {
                 alt=""
               />
 
+
+{/* for murge */}
               {/* text part  */}
 
               <h2 className="text-center text-white text-6xl font-bold">
                 29th December, 2025
               </h2>
-              {/* text white kore niyen cinzel font diye disi */}
+              {/* text part  */}
               <h2 className="text-center text-6xl my-6  cinzel font-bold">
                 North South University
               </h2>
@@ -69,7 +71,7 @@ const Home = () => {
             </p>
           </div>
 
-          
+
 
           <div className="w-auto h-auto rounded-[8px] border-1 border-white shadow-[0_8px_10px_0_rgba(0,0,0,0.3)] overflow-hidden my-5 max-md:mb-15">
             <img
