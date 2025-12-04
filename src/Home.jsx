@@ -13,7 +13,7 @@ const Home = () => {
       <div className="grid-bg pb-12">
         {/* Hero Section */}
         <div
-          className="relative bottom-20 w-full md:h-[110vh] h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+          className="relative bottom-20 w-full md:h-[120vh] h-[80vh] flex items-center justify-center bg-fixed md:bg-bottom bg-cover"
           style={{ backgroundImage: "url('SPACBG.png')" }}
         >
           <div className="flex flex-col">
@@ -69,25 +69,35 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-auto h-auto rounded-[8px] shadow-[0_8px_10px_0_rgba(0,0,0,0.3)] overflow-hidden my-5 max-md:mb-15">
+          
+
+          <div className="w-auto h-auto rounded-[8px] border-1 border-white shadow-[0_8px_10px_0_rgba(0,0,0,0.3)] overflow-hidden my-5 max-md:mb-15">
             <img
               className="md:w-100 md:h-100 w-70 h-70 object-cover relative z-10 hover:scale-105 transition-all ease-in-out duration-300"
               src="WhatIsSPAC.png"
-              alt=""
+              alt="SPAC Image"
             />
           </div>
         </div>
 
         {/* Goal Section */}
         <section
-          className="relative w-full md:h-[40vh] flex items-center justify-center bg-fixed bg-center bg-cover"
-          style={{
-            backgroundImage: "url('/src/assets/images/goalBackground1.jpg')",
-          }}
+          className="relative w-full md:h-[40vh] flex items-center justify-center overflow-hidden"
         >
-          {/* Overlay for readability */}
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Blurred Background Image */}
+          <div
+            className="absolute inset-0 bg-center bg-cover"
+            style={{
+              backgroundImage: "url('SPACGoal.jpg')",
+              filter: "blur(2px)",       // ← Blur amount
+              transform: "scale(1.05)",  // ← Prevents edges from showing
+            }}
+          ></div>
 
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/40"></div>
+
+          {/* Content */}
           <div className="relative md:p-6 py-15 rounded-xl max-w-3xl mx-5 text-center">
             <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Goal of SPAC '25
@@ -102,6 +112,8 @@ const Home = () => {
           </div>
         </section>
 
+
+
         <Collaborator />
         <Sponsors />
 
@@ -112,7 +124,7 @@ const Home = () => {
           </h3>
         </section>
 
-        <div className="md:w-5xl mx-auto aspect-video overflow-hidden max-md:mx-3 rounded-[12px] md:py-12 py-4">
+        <div className="md:max-w-5xl lg:mx-auto aspect-video overflow-hidden mx-3 rounded-[12px] md:my-12 my-4">
           <video
             className="w-full h-full object-cover"
             src="/src/assets/videos/sample.mp4" // change the video source

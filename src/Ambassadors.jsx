@@ -35,9 +35,9 @@ const Ambassadors = () => {
     <>
       <div className="grid-bg">
         <SectionHeadingBG />
-        <div className="max-w-5xl md:mx-auto mt-10 md:mt-25 z-10 relative">
+        <div className="max-w-5xl md:mx-auto z-10 relative">
           <FadeIn>
-            <h2 className="text-white text-center md:text-left text-[24px] md:text-[30px] font-bold">
+            <h2 className="text-white text-center mt-30 md:mt-45 md:text-left text-[24px] md:text-[30px] font-bold">
               SPAC 2025 Ambassadors
             </h2>
           </FadeIn>

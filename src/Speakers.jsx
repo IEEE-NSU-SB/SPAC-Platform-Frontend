@@ -30,9 +30,9 @@ const Speakers = () => {
   return (
     <div className="grid-bg">
       <SectionHeadingBG />
-      <div className="max-w-5xl md:mx-auto mt-10 md:mt-25 z-10 relative">
+      <div className="max-w-5xl md:mx-auto z-10 relative">
         <FadeIn>
-          <h2 className='text-white text-center md:text-left text-[24px] md:text-[30px] font-bold'>
+          <h2 className='text-white text-center mt-30 md:mt-45 md:text-left text-[24px] md:text-[30px] font-bold'>
             SPAC 2025 Speakers
           </h2>
         </FadeIn>
@@ -49,7 +49,7 @@ const Speakers = () => {
               <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="md:w-[220px] md:h-auto object-cover rounded-[10px]"
+                className="md:w-[220px] md:h-auto object-cover rounded-[8px]"
               />
 
               <div className='flex flex-col justify-between'>
