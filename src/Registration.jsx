@@ -97,9 +97,9 @@ const Registration = () => {
           <div className="text-center space-y-12">
             {/* Animated Icon */}
             <div className="scroll-animate flex justify-center">
-              <div className="relative">
+              <div className="relative max-md:top-3">
                 {/* Decorative Ring */}
-                <div className={`absolute inset-0 -m-4 rounded-full border-4 border-dashed border-${content.color} animate-spin-slow opacity-30`}></div>
+                <div className={`absolute inset-0 -m-2 rounded-full border-4 border-dashed border-${content.color} animate-spin-slow opacity-30`}></div>
 
                 <div className="relative">
                   {content.icon}
@@ -109,7 +109,7 @@ const Registration = () => {
 
             {/* Message Card */}
             <div className="scroll-animate animation-delay-200">
-              <div className={`bg-white rounded-2xl p-8 md:p-12 shadow-xl max-w-3xl mx-auto border-t-4 border-${content.color}`}>
+              <div className={`bg-white rounded-[8px] p-8 md:p-12 shadow-xl max-w-4xl mx-auto border-t-4 border-${content.color}`}>
 
                 <h3 className={`text-2xl md:text-3xl font-bold text-${content.color} mb-4`}>
                   {content.title}
@@ -119,20 +119,8 @@ const Registration = () => {
                   {content.message}
                 </p>
 
-                {/* Registration Form - Only when Open */}
-                {registrationStatus === "open" && (
-                  <div className="bg-gradient-to-r from-ieee-blue-15 to-ieee-cyan-15 rounded-xl p-6 mb-8">
-                    <button
-                      onClick={handleLink}
-                      className="w-full px-6 py-4 bg-gradient-to-r from-ieee-blue to-ieee-cyan text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
-                    >
-                      Register Now
-                    </button>
-                  </div>
-                )}
-
                 {/* Important Dates */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-15">
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-full bg-ieee-orange-15 flex items-center justify-center">
@@ -177,20 +165,33 @@ const Registration = () => {
                   </div>
                 </div>
 
+                {/* Registration Form - Only when Open */}
+                {registrationStatus === "open" && (
+                  <div>
+                    <button
+                      onClick={handleLink}
+                      className="w-full px-6 py-4 bg-gradient-to-r from-ieee-blue to-ieee-cyan text-white font-bold rounded-[6px] hover:shadow-lg transition-all duration-300 cursor-pointer"
+                    >
+                      Register Now
+                    </button>
+                  </div>
+                )}
+
+
               </div>
             </div>
 
             {/* Stats */}
             <div className="scroll-animate animation-delay-400 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <div className="bg-white rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-[8px] p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <div className="text-3xl md:text-4xl font-bold text-ieee-blue mb-2">300+</div>
                 <div className="text-gray-600 text-sm">Expected Attendees</div>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-[8px] p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <div className="text-3xl md:text-4xl font-bold text-ieee-cyan mb-2">20+</div>
                 <div className="text-gray-600 text-sm">Industry Speakers</div>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-[8px] p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <div className="text-3xl md:text-4xl font-bold text-ieee-orange mb-2">1 Day</div>
                 <div className="text-gray-600 text-sm">Networking Event</div>
               </div>

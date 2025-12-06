@@ -1,86 +1,136 @@
-
-// Usage:
-// 1) Paste this file into your React project (e.g. src/components/Loader.jsx).
-// 2) Install Tailwind CSS or change classes to your CSS framework.
-// 3) Import and show <SpacLoader /> while your app is loading.
-
 export default function SpacLoader() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-[#002855] via-[#002855] to-[#002855] p-6">
-      {/* subtle animated network backdrop */}
-      <svg
-        className="pointer-events-none absolute inset-0 w-full h-full opacity-30"
-        preserveAspectRatio="none"
-        viewBox="0 0 1920 1080"
-        aria-hidden="true"
-      >
-        <g fill="none" stroke="#0ea5e9" strokeOpacity="0.18">
-          <path d="M100 600 L400 420 L720 540 L1050 350 L1420 520 L1700 420" />
-          <path d="M40 720 L320 520 L650 640 L980 430 L1300 580 L1820 480" />
-        </g>
-      </svg>
+    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#001933]">
 
-      {/* centered card to keep the logo centered on mobile/desktop */}
-      <div className="relative z-10 flex flex-col items-center gap-6">
-        <div className="flex items-center justify-center">
-          <div className="flex flex-col items-center gap-6 md:gap-10">
-            {/* logo */}
-            {/* <div className="flex items-center justify-center p-2 md:p-4">
-              <img
-                src="SPAC25Logo.png"
-                alt="SPAC logo"
-                className="logoPulse w-[220px] md:w-[520px] max-w-full h-auto"
-                style={{ willChange: 'transform, filter' }}
-              />
-            </div> */}
+      {/* ========================== */}
+      {/* BACKGROUND ANIMATED LAYERS */}
+      {/* ========================== */}
 
-            {/* loader text / ring on larger screens */}
-            <div className="flex flex-col items-start">
-              <div className="mt-1 text-sky-300 text-2xl uppercase tracking-widest">SPAC 2025</div>
-            </div>
-          </div>
+      {/* Deep gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-ieee-darkblue via-[#001a3d] to-[#000F26]" />
+
+      {/* Animated cyber grid */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(0, 181, 226, 0.25) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 181, 226, 0.25) 1px, transparent 1px)
+          `,
+          backgroundSize: "55px 55px",
+          animation: "gridMove 22s linear infinite",
+        }}
+      />
+
+      {/* Floating particles */}
+      {[...Array(12)].map((_, i) => (
+        <div
+          key={i}
+          className={`particle-${i}`}
+          style={{
+            position: "absolute",
+            width: "6px",
+            height: "6px",
+            borderRadius: "50%",
+            background: "rgba(0, 181, 226, 0.8)",
+            filter: "blur(2px)",
+            animation: `floatParticle ${6 + i}s ease-in-out infinite`,
+            top: `${20 + i * 6}%`,
+            left: `${10 + (i * 7) % 80}%`,
+          }}
+        />
+      ))}
+
+      {/* Cyan glow orbs */}
+      <div className="glow-orb -left-10 -top-10"></div>
+      <div className="glow-orb right-0 bottom-0"></div>
+
+      {/* ================= */}
+      {/* LOADER MAIN CARD */}
+      {/* ================= */}
+
+      <div className="relative z-10 flex flex-col items-center gap-6 select-none">
+
+        {/* SPAC Logo with glow + pulse */}
+        <div className="flex items-center justify-center p-4">
+          <img
+            src="SPAC25LogoMin.png"
+            alt="SPAC 2025"
+            className="logoPulse w-[240px] md:w-[480px] drop-shadow-[0_10px_40px_rgba(0,180,226,0.45)]"
+          />
         </div>
 
-        {/* subtle progress dots for extra motion (mobile friendly) */}
-        <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-sky-400 animate-bounce" style={{ animationDelay: '0s' }} />
-          <span className="w-3 h-3 rounded-full bg-sky-400/80 animate-bounce" style={{ animationDelay: '0.15s' }} />
-          <span className="w-3 h-3 rounded-full bg-sky-400/60 animate-bounce" style={{ animationDelay: '0.3s' }} />
+        {/* Text */}
+        <div className="text-center">
+          <h2 className="text-sky-300 text-xl md:text-2xl tracking-[0.25em] font-semibold">
+            LOADING • SPAC 2025
+          </h2>
+        </div>
+
+        {/* Floating dots */}
+        <div className="flex items-center gap-3 mt-2">
+          <span className="w-3 h-3 rounded-full bg-ieee-cyan animate-bounce" />
+          <span
+            className="w-3 h-3 rounded-full bg-ieee-cyan/75 animate-bounce"
+            style={{ animationDelay: "0.2s" }}
+          />
+          <span
+            className="w-3 h-3 rounded-full bg-ieee-cyan/50 animate-bounce"
+            style={{ animationDelay: "0.4s" }}
+          />
         </div>
       </div>
 
-      {/* component-scoped styles: pulse effect + responsive tweaks */}
+      {/* ================= */}
+      {/* STYLE DEFINITIONS */}
+      {/* ================= */}
+
       <style>{`
-        .logoPulse {
-          animation: pulseLogo 1.6s ease-in-out infinite;
+        @keyframes gridMove {
+          0% { background-position: 0 0; }
+          100% { background-position: 100px 100px; }
         }
 
-        @keyframes pulseLogo {
+        @keyframes floatParticle {
+          0%, 100% { transform: translateY(0) translateX(0); opacity: 0.7; }
+          50% { transform: translateY(-25px) translateX(10px); opacity: 1; }
+        }
+
+        .glow-orb {
+          position: absolute;
+          width: 240px;
+          height: 240px;
+          background: radial-gradient(circle, rgba(0,181,226,0.35), transparent 70%);
+          filter: blur(40px);
+          animation: orbFloat 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes orbFloat {
+          from { transform: translateY(0px) translateX(0px); }
+          to { transform: translateY(-20px) translateX(20px); }
+        }
+
+        /* SPAC Logo Pulse */
+        .logoPulse {
+          animation: logoPulse 2.4s ease-in-out infinite;
+        }
+
+        @keyframes logoPulse {
           0% {
-            transform: translateZ(0) scale(1);
-            filter: drop-shadow(0 0 0 rgba(14,165,233,0));
-            opacity: 0.98;
+            transform: scale(1);
+            filter: drop-shadow(0 0 0 rgba(0,181,226,0.3));
+            opacity: 0.95;
           }
-          45% {
-            transform: translateZ(0) scale(1.035) translateY(-3px);
-            filter: drop-shadow(0 10px 30px rgba(2,6,23,0.45)) drop-shadow(0 0 18px rgba(14,165,233,0.06));
+          50% {
+            transform: scale(1.04);
+            filter: drop-shadow(0 0 35px rgba(0,181,226,0.55));
             opacity: 1;
           }
           100% {
-            transform: translateZ(0) scale(1);
-            filter: drop-shadow(0 0 0 rgba(14,165,233,0));
-            opacity: 0.98;
+            transform: scale(1);
+            filter: drop-shadow(0 0 0 rgba(0,181,226,0.3));
+            opacity: 0.95;
           }
-        }
-
-        /* responsive adjustments to center properly on tall/short screens */
-        @media (max-width: 640px) {
-          .logoPulse { width: 240px !important; }
-        }
-
-        /* reduce svg backdrop intensity on small screens */
-        @media (max-width: 640px) {
-          svg { opacity: 0.18; }
         }
       `}</style>
     </div>

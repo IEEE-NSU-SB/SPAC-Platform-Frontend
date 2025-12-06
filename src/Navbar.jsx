@@ -48,7 +48,7 @@ const Navbar = () => {
       <nav
         className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out"
         style={{
-          backgroundColor: scrolled ? "#002855" : "transparent",
+          backgroundColor: scrolled || isOpen ? "#002855" : "transparent",
           backdropFilter: scrolled ? "saturate(120%) blur(8px)" : "none",
           boxShadow: scrolled ? "0 4px 20px rgba(0, 0, 0, 0.1)" : "none",
         }}
@@ -62,7 +62,9 @@ const Navbar = () => {
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-            <span className="text-white font-bold text-lg">SPAC 2025</span>
+            <Link to="/">
+            <img src="SPAC25LogoMin.png" className="w-35 relative top-1 left-2" alt="SPAC 2025" />
+            </Link>
           </div>
 
           <div className="hidden md:flex justify-center items-center space-x-1 lg:space-x-2 py-4">
@@ -83,7 +85,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`md:hidden absolute top-full left-0 right-0 mx-4 mt-2 shadow-xl overflow-hidden transition-all duration-300 ease-out rounded-lg ${isOpen
+            className={`md:hidden absolute top-full left-0 right-0 shadow-xl overflow-hidden transition-all duration-300 ease-out rounded-lg ${isOpen
                 ? "opacity-100 translate-y-0 max-h-96"
                 : "opacity-0 -translate-y-3 max-h-0 pointer-events-none"
               }`}
