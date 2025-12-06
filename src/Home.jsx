@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import Collaborator from "./Collaborator";
 import Sponsors from "./Sponsors";
 import { Link } from "react-router-dom";
@@ -6,8 +6,28 @@ import FadeIn from "./FadeIn";
 import Logo from "./assets/images/SPAC25LogoMin.png";
 import SPACimg from "./assets/images/WhatIsSPAC.png";
 import SPACBG from "./assets/images/SPACBG.png";
+import SPACBGPhn from "./assets/images/SPACBGPhn.png";
 
 const Home = () => {
+
+
+  const [bgImage, setBgImage] = useState(SPACBG);
+
+  useEffect(() => {
+    const checkSize = () => {
+      if (window.innerWidth < 768) {
+        setBgImage(SPACBGPhn);
+      } else {
+        setBgImage(SPACBG);
+      }
+    };
+
+    checkSize(); // initial
+    window.addEventListener("resize", checkSize);
+
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -47,8 +67,9 @@ const Home = () => {
         {/* Hero Section - Formal & Elegant */}
         <div
           className="relative bottom-20 w-full md:h-[120vh] h-[90vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover bg-auto overflow-hidden"
-          style={{ backgroundImage: `url(${SPACBG})` }}
+          style={{ backgroundImage: `url(${bgImage})` }}
         >
+
           {/* Gradient Overlay with Vignette Effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-ieee-black-75 via-ieee-black-50 to-ieee-black-75"></div>
           <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-ieee-black-50"></div>
