@@ -46,7 +46,7 @@ const Home = () => {
       <div className="grid-bg pb-12">
         {/* Hero Section - Formal & Elegant */}
         <div
-          className="relative bottom-20 w-full md:h-[120vh] h-[90vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover bg-center overflow-hidden"
+          className="relative bottom-20 w-full md:h-[120vh] h-[90vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover bg-auto overflow-hidden"
           style={{ backgroundImage: `url(${SPACBG})` }}
         >
           {/* Gradient Overlay with Vignette Effect */}
