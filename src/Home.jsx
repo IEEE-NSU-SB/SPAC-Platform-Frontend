@@ -13,11 +13,11 @@ const Home = () => {
     <>
       <div className="grid-bg pb-12">
         {/* Hero Section */}
-        <FadeIn>
           <div
             className="relative bottom-20 w-full md:h-[120vh] h-[80vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover"
             style={{ backgroundImage: "url('SPACBG.png')" }}
-          >
+            >
+            <FadeIn>
             <img
               className="max-md:w-80 md:w-280 object-cover mx-auto mt-50"
               src="SPAC25LogoMin.png"
@@ -40,8 +40,8 @@ const Home = () => {
                 Register Now
               </Link>
             </div>
-          </div>
         </FadeIn>
+          </div>
 
         {/* What is SPAC? */}
         <FadeIn>
@@ -76,7 +76,6 @@ const Home = () => {
         </FadeIn>
 
         {/* Goal Section */}
-        <FadeIn>
           <section className="relative w-full md:h-[40vh] flex items-center justify-center overflow-hidden">
             {/* Blurred Background Image */}
             <div
@@ -91,6 +90,7 @@ const Home = () => {
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/40"></div>
 
+              <FadeIn>
             {/* Content */}
             <div className="relative md:p-6 py-15 rounded-xl max-w-3xl mx-5 text-center">
               <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
@@ -104,15 +104,11 @@ const Home = () => {
                 essential for future global challenges.
               </p>
             </div>
+        </FadeIn>
           </section>
-        </FadeIn>
 
-        <FadeIn>
           <Collaborator />
-        </FadeIn>
-        <FadeIn>
           <Sponsors />
-        </FadeIn>
 
         {/* Last Year SPAC */}
         <FadeIn>

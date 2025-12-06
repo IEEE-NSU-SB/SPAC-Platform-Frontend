@@ -3,6 +3,7 @@ import ieee_logo_bd from "./assets/collaborator-logo/ieee-bd-logo.png";
 import nsu_logo from "./assets/collaborator-logo/nsu-logo.png";
 import nsu_yf_logo from "./assets/collaborator-logo/ieee-yf.png";
 import ieee_nsu_sb from "./assets/collaborator-logo/ieee-nsu-sb-logo.png";
+import FadeIn from "./FadeIn";
 
 const Collaborator = () => {
   const collaboratorImages = [
@@ -50,7 +51,9 @@ const Collaborator = () => {
   return (
     <div className="w-full bg-white md:px-6 py-15">
       <style>{styles}</style>
+      <FadeIn>
       <h2 className="text-2xl md:text-4xl text-[#002855] pb-14 font-bold text-center">Collaborators</h2>
+      </FadeIn>
 
       <div className="marquee-wrapper">
         <div className="marquee-group">
