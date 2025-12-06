@@ -94,7 +94,7 @@ const Timeline = () => {
 
                   {/* Connecting Line (only if not the last item) */}
                   {index !== scheduleData.length - 1 && (
-                    <div className="h-30 w-[2px] bg-ieee-darkblue relative mb-1 transition-all duration-300 group-hover:bg-ieee-cyan">
+                    <div className="md:h-35 h-58 w-[2px] bg-ieee-darkblue relative mb-1 transition-all duration-300 group-hover:bg-ieee-cyan">
                       {/* Arrow Head */}
                       <div className="absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-1/2 scale-200 text-ieee-darkblue transition-colors duration-300 group-hover:text-ieee-cyan">
                         <svg

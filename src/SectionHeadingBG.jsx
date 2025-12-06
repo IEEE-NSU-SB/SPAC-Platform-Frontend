@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionHeadingBG = ({ title, subtitle }) => {
   return (
-    <div className="relative w-full h-[300px] md:h-[350px] flex flex-col items-center justify-center overflow-hidden bg-fixed bg-cover bg-center"
+    <div className="relative w-full h-auto md:h-[350px] flex flex-col items-center justify-center overflow-hidden bg-fixed bg-cover bg-center"
       style={{ backgroundImage: "url('SPACBG.png')" }}
     >
       {/* Gradient Overlay with Vignette Effect */}
