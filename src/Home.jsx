@@ -52,20 +52,20 @@ const Home = () => {
 
           <div className="relative z-10 flex flex-col items-center justify-center px-4 w-full max-w-7xl">
             {/* Formal Header Line */}
-            <div className="animate-fade-in-down animation-delay-100 mb-8 md:mb-12">
+            {/* <div className="animate-fade-in-down animation-delay-100 mb-8 md:mb-12">
               <div className="formal-divider"></div>
-            </div>
+            </div> */}
 
             {/* Logo */}
             <img
-              className="w-64 md:w-[600px] lg:w-[700px] object-contain mx-auto animate-scale-in animation-delay-200 will-change-transform drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
+              className="w-64 md:mt-35 mt-30 md:w-[600px] scroll-animate lg:w-[800px] object-contain mx-auto animate-scale-in animation-delay-200 will-change-transform drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
               src="SPAC25LogoMin.png"
               alt="SPAC 2025 Logo"
               loading="eager"
               fetchpriority="high"
               width="700"
               height="auto"
-            />
+              />
 
             {/* Formal Subtitle */}
             {/* <div className="animate-fade-in-up animation-delay-400 mt-8 md:mt-12 mb-4 md:mb-6">
@@ -79,7 +79,7 @@ const Home = () => {
               <h2 className="text-center text-white font-bold tracking-wider
                 text-2xl md:text-3xl lg:text-4xl
                 drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]
-                border-b-2 border-ieee-cyan pb-3 mb-6">
+                border-b-2 border-ieee-white pb-3 mb-6">
                 December 29, 2025
               </h2>
             </div>
@@ -100,9 +100,9 @@ const Home = () => {
             </div>
 
             {/* Formal Divider */}
-            <div className="animate-fade-in-up animation-delay-700 my-6 md:my-8">
+            {/* <div className="animate-fade-in-up animation-delay-700 my-6 md:my-8">
               <div className="formal-divider"></div>
-            </div>
+            </div> */}
 
             {/* Register Button - Formal & Professional */}
             <div className="animate-fade-in-up animation-delay-800">
@@ -157,9 +157,9 @@ const Home = () => {
             </div>
 
             {/* Bottom Formal Line */}
-            <div className="animate-fade-in-up animation-delay-900 mt-10 md:mt-14">
+            {/* <div className="animate-fade-in-up animation-delay-900 mt-10 md:mt-14">
               <div className="formal-divider"></div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -168,7 +168,7 @@ const Home = () => {
           <div className="scroll-animate-left">
             <div className="formal-divider mb-6"></div>
             <h3 className="text-3xl md:text-4xl lg:text-5xl text-ieee-darkblue font-bold mb-6 tracking-tight">
-              What is <span className="text-ieee-cyan">SPAC</span>?
+              What is <span className="text-ieee-cyan">SPAC?</span>
             </h3>
             <p className="md:text-lg text-gray-700 leading-relaxed text-justify">
               The <strong>IEEE Student Professional Awareness Conference (SPAC)</strong> is a
@@ -189,10 +189,10 @@ const Home = () => {
           <div className="scroll-animate-right w-full max-w-md">
             <div className="relative group">
               {/* Decorative Border */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue rounded-xl opacity-50 group-hover:opacity-100 blur transition duration-500"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue rounded-xl opacity-20 group-hover:opacity-50 blur transition duration-500"></div>
 
               {/* Image Container */}
-              <div className="relative rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-[6px] overflow-hidden shadow-2xl">
                 <img
                   className="w-full h-auto object-cover transform transition-all duration-500 group-hover:scale-105"
                   src="WhatIsSPAC.png"
@@ -263,7 +263,7 @@ const Home = () => {
         </div>
 
         {/* Sponsors - With Animation */}
-        <div className="scroll-animate my-16 md:my-20" style={{ marginTop: "0" }}>
+        <div className="my-16 md:my-20" style={{ marginTop: "0" }}>
           <Sponsors />
         </div>
 
@@ -280,7 +280,7 @@ const Home = () => {
           <div className="md:max-w-5xl lg:mx-auto mx-5">
             <div className="relative group">
               {/* Decorative Border for Video */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue rounded-2xl opacity-50 group-hover:opacity-100 blur transition duration-500"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue rounded-2xl opacity-30 group-hover:opacity-50 blur transition duration-500"></div>
 
               {/* Video Container */}
               <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl">

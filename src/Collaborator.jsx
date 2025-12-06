@@ -48,7 +48,7 @@ const Collaborator = () => {
 
   return (
     <div className="w-full bg-[#FFFEF9] py-20 md:py-24">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-16">
           <div className="formal-divider mb-6"></div>
@@ -76,7 +76,7 @@ const Collaborator = () => {
                 <img
                   src={img}
                   alt={`Collaborator ${i + 1}`}
-                  className="h-20 md:h-24 lg:h-28 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  className="h-20 md:h-24 lg:h-28 w-auto object-contain filter hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}
@@ -87,7 +87,7 @@ const Collaborator = () => {
                 <img
                   src={img}
                   alt={`Collaborator ${i + 1}`}
-                  className="h-20 md:h-24 lg:h-28 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  className="h-20 md:h-24 lg:h-28 w-auto object-contain filter hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}

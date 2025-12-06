@@ -42,7 +42,7 @@ const Sponsors = () => {
         />
       </div>
       {/* moddher div  */}
-      <div className="bg-[#FFFCE6E3] max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
+      <div className="bg-[#FFFCE6E3] scroll-animate max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
         {/* sponser gular parent div  */}
         <div className="flex flex-col   md:flex-row  md:gap-25 gap-10 flex-wrap justify-center items-center relative">
           {/* single div  */}

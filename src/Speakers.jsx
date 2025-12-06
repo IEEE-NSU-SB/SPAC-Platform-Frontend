@@ -37,13 +37,13 @@ const Speakers = () => {
       title: "Associate Professor",
       image: "src/assets/images/speaker1.png",
       description: `Dr. Nabeel Mohammad is a distinguished academic and researcher with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
-Dr. Nabeel's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
+      Dr. Nabeel's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
 He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
     },
     {
       name: "Dr. Sarah Johnson",
       title: "Chief Technology Officer",
-      image: "src/assets/images/speaker2.png",
+      image: "src/assets/images/speaker1.png",
       description: `Dr. Sarah Johnson is a renowned technology leader with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
 Dr. Sarah's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
 He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
@@ -73,26 +73,15 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
             {speakersData.map((speaker, index) => (
               <div
                 key={index}
-                className="scroll-animate bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                className="scroll-animate bg-white rounded-[6px] shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden ease-in-out"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex flex-col md:flex-row">
-                  {/* Image Placeholder */}
-                  <div className="md:w-1/3 relative bg-gradient-to-br from-ieee-blue to-ieee-cyan p-1">
-                    <div className="relative aspect-square md:aspect-auto md:h-full bg-ieee-darkblue flex items-center justify-center overflow-hidden group">
-                      {/* Initials */}
-                      <div className="text-6xl md:text-8xl font-bold text-white opacity-20">
-                        {getInitials(speaker.name)}
-                      </div>
-
-                      {/* Icon Overlay */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <svg className="w-24 h-24 md:w-32 md:h-32 text-white opacity-50 group-hover:opacity-70 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="md:w-[400px] object-cover"
+                    />
 
                   {/* Speaker Details */}
                   <div className="md:w-2/3 p-6 md:p-8">
