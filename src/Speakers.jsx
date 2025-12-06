@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import SectionHeadingBG from "./SectionHeadingBG";
-
+import speaker from "./assets/speaker1.png";
 const Speakers = () => {
   const observerRef = useRef(null);
 
@@ -35,7 +35,7 @@ const Speakers = () => {
     {
       name: "Dr. Nabeel Mohammad",
       title: "Associate Professor",
-      image: "src/assets/speaker1.png",
+      image: {speaker},
       description: `Dr. Nabeel Mohammad is a distinguished academic and researcher with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
       Dr. Nabeel's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
 He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
@@ -43,7 +43,7 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
     {
       name: "Dr. Sarah Johnson",
       title: "Chief Technology Officer",
-      image: "src/assets/speaker1.png",
+      image: {speaker},
       description: `Dr. Sarah Johnson is a renowned technology leader with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
 Dr. Sarah's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
 He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
