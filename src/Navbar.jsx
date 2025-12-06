@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Logo from "./assets/images/SPAC25LogoMin.png";
 
 const navItems = [
   { label: "HOME", path: "/" },
@@ -63,7 +64,7 @@ const Navbar = () => {
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <Link to="/">
-            <img src="src/assets/images/SPAC25LogoMin.png" className="w-35 relative top-1 left-2" alt="SPAC 2025" />
+            <img src={Logo} className="w-35 relative top-1 left-2" alt="SPAC 2025" />
             </Link>
           </div>
 

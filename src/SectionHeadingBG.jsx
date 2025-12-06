@@ -1,10 +1,10 @@
 import React from 'react';
 import FadeIn from './FadeIn';
-
+import SPACBG from "./assets/images/SPACBG.png";
 const SectionHeadingBG = ({ title, subtitle }) => {
   return (
     <div className="relative w-full h-[300px] md:h-[350px] flex flex-col items-center justify-center overflow-hidden bg-fixed bg-cover bg-center"
-      style={{ backgroundImage: "url('src/assets/images/SPACBG.png')" }}
+      style={{ backgroundImage: `url(${SPACBG})` }}
     >
       {/* Gradient Overlay with Vignette Effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-ieee-black-75 via-ieee-black-50 to-ieee-black-75"></div>

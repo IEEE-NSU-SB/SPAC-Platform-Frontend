@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import SectionHeadingBG from "./SectionHeadingBG";
 
+
 const Ambassadors = () => {
   const observerRef = useRef(null);
 

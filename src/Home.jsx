@@ -3,6 +3,9 @@ import Collaborator from "./Collaborator";
 import Sponsors from "./Sponsors";
 import { Link } from "react-router-dom";
 import FadeIn from "./FadeIn";
+import Logo from "./assets/images/SPAC25LogoMin.png";
+import SPACimg from "./assets/images/WhatIsSPAC.png";
+import SPACBG from "./assets/images/SPACBG.png";
 
 const Home = () => {
   const observerRef = useRef(null);
@@ -44,7 +47,7 @@ const Home = () => {
         {/* Hero Section - Formal & Elegant */}
         <div
           className="relative bottom-20 w-full md:h-[120vh] h-[90vh] flex flex-col items-center justify-center bg-fixed md:bg-bottom bg-cover bg-center overflow-hidden"
-          style={{ backgroundImage: "url('src/assets/images/SPACBG.png')" }}
+          style={{ backgroundImage: `url(${SPACBG})` }}
         >
           {/* Gradient Overlay with Vignette Effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-ieee-black-75 via-ieee-black-50 to-ieee-black-75"></div>
@@ -60,7 +63,7 @@ const Home = () => {
               {/* Logo */}
               <img
                 className="w-64 md:mt-35 mt-30 md:w-[600px] lg:w-[800px] object-contain mx-auto animate-scale-in animation-delay-200 will-change-transform drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
-                src="src/assets/images/SPAC25LogoMin.png"
+                src={Logo}
                 alt="SPAC 2025 Logo"
                 loading="eager"
                 fetchpriority="high"
@@ -202,7 +205,7 @@ const Home = () => {
                 <div className="relative rounded-[6px] overflow-hidden shadow-2xl">
                   <img
                     className="w-full h-auto object-cover transform transition-all duration-500 group-hover:scale-105"
-                    src="src/assets/images/WhatIsSPAC.png"
+                    src={SPACimg}
                     alt="SPAC Event"
                     loading="lazy"
                   />
