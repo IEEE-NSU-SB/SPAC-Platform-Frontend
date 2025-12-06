@@ -63,7 +63,7 @@ const Navbar = () => {
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <Link to="/">
-            <img src="SPAC25LogoMin.png" className="w-35 relative top-1 left-2" alt="SPAC 2025" />
+            <img src="src/assets/images/SPAC25LogoMin.png" className="w-35 relative top-1 left-2" alt="SPAC 2025" />
             </Link>
           </div>
 

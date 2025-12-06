@@ -54,7 +54,7 @@ export default function SpacLoader() {
         {/* SPAC Logo with glow + pulse */}
         <div className="flex items-center justify-center p-4">
           <img
-            src="SPAC25LogoMin.png"
+            src="src/assets/images/SPAC25LogoMin.png"
             alt="SPAC 2025"
             className="logoPulse w-[240px] md:w-[480px] drop-shadow-[0_10px_40px_rgba(0,180,226,0.45)]"
           />

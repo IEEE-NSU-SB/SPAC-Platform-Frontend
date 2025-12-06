@@ -55,7 +55,7 @@ const Collaborator = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-ieee-darkblue font-bold mb-4">
             Our <span className="text-ieee-cyan">Collaborators</span>
           </h2>
-          <p className="text-gray-600 text-lg">In Partnership With</p>
+          {/* <p className="text-gray-600 text-lg">In Partnership With</p> */}
         </div>
 
         {/* Infinite Scroll Marquee */}
