@@ -17,50 +17,55 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
     const onScroll = () => {
-      // switch to colored bg when user scrolls down a bit
       setScrolled(window.scrollY > 20);
     };
 
-    onScroll(); // set initial state (useful on page reloads)
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const toggleMenu = () => setIsOpen((s) => !s);
 
-  // styles reused from your earlier version
   const activeStyle =
-    "text-[#FF9D00] relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-[#FF9D00] after:rounded-full after:transition-all after:duration-300";
+    "text-ieee-orange relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-ieee-orange after:rounded-full after:transition-all after:duration-300";
 
   const inactiveStyle =
-    "text-ieee-white hover:text-[#FF9D00] hover:after:w-full hover:after:bg-[#FF9D00] nav-link";
+    "text-ieee-white hover:text-ieee-orange nav-link";
 
   return (
     <>
       <nav
-        className="fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-out"
-        // background transitions between transparent and #002855
+        className="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out"
         style={{
           backgroundColor: scrolled ? "#002855" : "transparent",
-          // optional subtle blur when scrolled:
-          backdropFilter: scrolled ? "saturate(120%) blur(6px)" : "none",
+          backdropFilter: scrolled ? "saturate(120%) blur(8px)" : "none",
+          boxShadow: scrolled ? "0 4px 20px rgba(0, 0, 0, 0.1)" : "none",
         }}
       >
-        <div
-          className="max-w-[1100px] mx-auto px-4 py-3 sm:px-6 mt-4 rounded-lg"
-        // keep the inner container layout as before
-        >
-          <button
-            className="md:hidden text-ieee-white p-2"
-            onClick={toggleMenu}
-            aria-label="Toggle navigation"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="md:hidden flex items-center justify-between py-3">
+            <button
+              className="text-white p-2 hover:bg-ieee-white-15 rounded-lg transition-colors"
+              onClick={toggleMenu}
+              aria-label="Toggle navigation"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+            <span className="text-white font-bold text-lg">SPAC 2025</span>
+          </div>
 
-          {/* Desktop Navigation Links (kept exactly like your original layout) */}
-          <div className="hidden md:flex justify-between space-x-2 md:space-x-4">
+          <div className="hidden md:flex justify-center items-center space-x-1 lg:space-x-2 py-4">
             {navItems.map((item) => {
               const isActive = location.pathname === item.path;
 
@@ -68,7 +73,8 @@ const Navbar = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`font-bold text-xs md:text-sm px-4 py-2 rounded-full cursor-pointer transition-all duration-300 whitespace-nowrap ${isActive ? activeStyle : inactiveStyle}`}
+                  className={`font-bold text-xs lg:text-sm px-3 lg:px-4 py-2 rounded-full cursor-pointer transition-all duration-300 whitespace-nowrap ${isActive ? activeStyle : inactiveStyle
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -76,13 +82,17 @@ const Navbar = () => {
             })}
           </div>
 
-          {/* Mobile Navigation Menu (kept as before but positioned under fixed nav) */}
           <div
-            className={`md:hidden absolute top-full w-[90%] shadow-lg overflow-hidden transition-all duration-300 ease-out mx-auto rounded ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3 pointer-events-none"
+            className={`md:hidden absolute top-full left-0 right-0 mx-4 mt-2 shadow-xl overflow-hidden transition-all duration-300 ease-out rounded-lg ${isOpen
+                ? "opacity-100 translate-y-0 max-h-96"
+                : "opacity-0 -translate-y-3 max-h-0 pointer-events-none"
               }`}
-            style={{ backgroundColor:  "#002855", left: "50%", transform: "translateX(-50%)" }}
+            style={{
+              backgroundColor: "#002855",
+              backdropFilter: "blur(10px)"
+            }}
           >
-            <div className="flex flex-col items-start px-4 py-2">
+            <div className="flex flex-col py-2">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
 
@@ -91,7 +101,9 @@ const Navbar = () => {
                     key={item.label}
                     to={item.path}
                     onClick={toggleMenu}
-                    className={`font-semibold text-base w-full py-3 px-2 transition-colors ${isActive ? "text-white" : "text-ieee-white hover:bg-gray-800"
+                    className={`font-semibold text-sm w-full py-3 px-4 transition-all duration-200 ${isActive
+                        ? "text-ieee-orange bg-ieee-white-15"
+                        : "text-white hover:bg-ieee-white-15 hover:text-ieee-orange"
                       }`}
                   >
                     {item.label}
@@ -103,105 +115,50 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* local styles for underline + glow (unchanged behavior) */}
       <style>{`
         .nav-link {
           position: relative;
-          color: #ffffff;
+          transition: color 200ms ease, text-shadow 200ms ease;
         }
 
-        /* underline pseudo element */
-        a[aria-current] { /* no-op, keep default if used */ }
-
-        /* Create underline + glow using a generic selector for the links */
-        .max-w-[1100px] a.font-bold::after,
-        .max-w-[1100px] a.font-semibold::after {
+        .nav-link::after {
           content: '';
           position: absolute;
-          bottom: 6px;
+          bottom: 0;
           left: 50%;
           transform: translateX(-50%);
           width: 0%;
-          height: 3px;
-          background: #FF9D00; /* ieee-orange */
+          height: 2px;
+          background: transparent;
           border-radius: 9999px;
-          transition: width 220ms ease;
+          transition: width 250ms ease, background 250ms ease;
         }
 
-        .max-w-[1100px] a.font-bold:hover::after,
-        .max-w-[1100px] a.font-bold.active::after,
-        .max-w-[1100px] a.font-semibold:hover::after,
-        .max-w-[1100px] a.font-semibold.active::after {
-          width: 70%;
+        .nav-link:hover {
+          color: #FFA300 !important;
+          text-shadow: 0 0 10px rgba(255, 163, 0, 0.6);
         }
 
-        .max-w-[1100px] a.font-bold:hover,
-        .max-w-[1100px] a.font-bold.active,
-        .max-w-[1100px] a.font-semibold:hover,
-        .max-w-[1100px] a.font-semibold.active {
-          text-shadow: 0 0 10px rgba(255,140,0,0.95);
+        .nav-link:hover::after {
+          width: 80%;
+          background: #FFA300;
+          box-shadow: 0 0 8px rgba(255, 163, 0, 0.4);
         }
 
-        /* Keep mobile underline placement ergonomic */
-        @media (max-width: 767px) {
-          .max-w-[1100px] a.font-semibold::after { bottom: 10px; }
+        .nav-link.active {
+          color: #FFA300 !important;
+          text-shadow: 0 0 10px rgba(255, 163, 0, 0.4);
         }
-          /* underline animation base */
-  .nav-link {
-    position: relative;
-  }
 
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 2px;
-    background: transparent;
-    border-radius: 9999px;
-    transition: width 250ms ease, background 250ms ease;
-  }
+        .nav-link.active::after {
+          width: 80%;
+          background: #FFA300;
+          box-shadow: 0 0 8px rgba(255, 163, 0, 0.4);
+        }
 
-  /* hover underline */
-  .nav-link:hover::after {
-    width: 100%;
-    background: #FF9D00; /* ieee-orange */
-  }
-
-  /* active underline */
-  .nav-link.active::after {
-    width: 100%;
-    background: #FF9D00;
-  }
-    /* base */
-  .nav-link {
-    position: relative;
-    transition: color 200ms ease, text-shadow 200ms ease;
-  }
-
-  /* hover = ieee-orange */
-  .nav-link:hover {
-    color: #FF9D00 !important;
-    text-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
-  }
-
-  .nav-link:hover::after {
-    background: #FF9D00;
-    box-shadow: 0 0 8px rgba(255, 140, 0, 0.2);
-  }
-
-  /* active (current page) = ieee-orange */
-  .nav-link.active {
-    color: #FF9D00 !important;
-    text-shadow: 0 0 10px rgba(255, 140, 0, 0.2);
-  }
-
-  .nav-link.active::after {
-    background: #FF9D00;
-    box-shadow: 0 0 8px rgba(255, 140, 0, 0.2);
-  }
+        nav a {
+          -webkit-tap-highlight-color: transparent;
+        }
       `}</style>
     </>
   );
