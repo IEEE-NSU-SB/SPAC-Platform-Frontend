@@ -286,7 +286,7 @@ const Home = () => {
               <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl">
                 <video
                   className="w-full h-full object-cover"
-                  src="/src/assets/videos/sample.mp4"
+                  src="https://api.ieeensusb.org/media_files/main_website_files/homepage/landing_video/compress.mp4"
                   autoPlay
                   muted
                   playsInline
