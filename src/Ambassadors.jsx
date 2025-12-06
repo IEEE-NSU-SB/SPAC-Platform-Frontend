@@ -114,9 +114,9 @@ const Ambassadors = () => {
                   {/* Image Container with Perfect Sizing */}
                   <div className="relative w-full h-80 md:h-96 overflow-hidden">
                     <img
-                    src={ambassador.image}
-                    alt={ambassador.name}
-                    className="object-cover"
+                      src={ambassador.image}
+                      alt={ambassador.name}
+                      className="object-cover"
                     />
                     {/* Floating Badge */}
                     {/* <div className="absolute top-4 left-4 z-20">

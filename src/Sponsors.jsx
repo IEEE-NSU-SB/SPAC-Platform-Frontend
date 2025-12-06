@@ -2,6 +2,7 @@ import React from "react";
 import cbl_gram_logo from "./assets/sponser-logo/cbl-gram.png";
 import arrow_logo from "./assets/sponser-logo/arrow.png";
 import star_logo from "./assets/sponser-logo/star.png";
+import FadeIn from "./FadeIn";
 
 const Sponsors = () => {
   const sponsorData = {
@@ -42,106 +43,108 @@ const Sponsors = () => {
         />
       </div>
       {/* moddher div  */}
-      <div className="bg-[#FFFCE6E3] scroll-animate max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
+      <div className="bg-[#FFFCE6E3] max-w-5xl mx-auto p-8 md:border-2 md:border-dashed rounded-xl">
         {/* sponser gular parent div  */}
-        <div className="flex flex-col   md:flex-row  md:gap-25 gap-10 flex-wrap justify-center items-center relative">
-          {/* single div  */}
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl text-[#002855] font-semibold mb-3">
-              Platinum
-            </h2>
-            {/* Image container */}
-            <div className="flex gap-5 flex-wrap justify-center">
-              {sponsorData.platinum.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className="md:w-16 w-13 h-auto object-cover"
-                />
-              ))}
+        <FadeIn>
+          <div className="flex flex-col   md:flex-row  md:gap-25 gap-10 flex-wrap justify-center items-center relative">
+            {/* single div  */}
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-[#002855] font-semibold mb-3">
+                Platinum
+              </h2>
+              {/* Image container */}
+              <div className="flex gap-5 flex-wrap justify-center">
+                {sponsorData.platinum.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    className="md:w-16 w-13 h-auto object-cover"
+                  />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* single div  */}
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl text-[#002855] font-semibold mb-3">Gold</h2>
-            {/* Image container */}
-            <div className="flex gap-5 flex-wrap justify-center">
-              {sponsorData.gold.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className="md:w-16 w-13 h-auto object-cover"
-                />
-              ))}
+            {/* single div  */}
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-[#002855] font-semibold mb-3">Gold</h2>
+              {/* Image container */}
+              <div className="flex gap-5 flex-wrap justify-center">
+                {sponsorData.gold.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    className="md:w-16 w-13 h-auto object-cover"
+                  />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* single div  */}
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl text-[#002855] font-semibold mb-3">
-              Silver
-            </h2>
-            {/* Image container */}
-            <div className="flex gap-5 flex-wrap justify-center">
-              {sponsorData.silver.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className="md:w-16 w-13 h-auto object-cover"
-                />
-              ))}
+            {/* single div  */}
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-[#002855] font-semibold mb-3">
+                Silver
+              </h2>
+              {/* Image container */}
+              <div className="flex gap-5 flex-wrap justify-center">
+                {sponsorData.silver.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    className="md:w-16 w-13 h-auto object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+            {/* single div  */}
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-[#002855] font-semibold mb-3">
+                Food Partner
+              </h2>
+              {/* Image container */}
+              <div className="flex gap-5 flex-wrap justify-center">
+                {sponsorData.foodPartner.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    className="md:w-16 w-13 h-auto object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+            {/* single div  */}
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-[#002855] font-semibold mb-3">
+                T-shirt Partner
+              </h2>
+              {/* Image container */}
+              <div className="flex gap-5 flex-wrap justify-center">
+                {sponsorData.tshirtPartner.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    className="md:w-16 w-13 h-auto object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+            {/* star logo div  */}
+            <div className="absolute -bottom-18 -right-19 md:block hidden">
+              <img
+                src={star_logo}
+                alt=""
+                className="animate-spin-slow"
+                style={{
+                  animation: "spin 8s linear infinite",
+                }}
+              />
             </div>
           </div>
-          {/* single div  */}
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl text-[#002855] font-semibold mb-3">
-              Food Partner
-            </h2>
-            {/* Image container */}
-            <div className="flex gap-5 flex-wrap justify-center">
-              {sponsorData.foodPartner.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className="md:w-16 w-13 h-auto object-cover"
-                />
-              ))}
-            </div>
-          </div>
-          {/* single div  */}
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl text-[#002855] font-semibold mb-3">
-              T-shirt Partner
-            </h2>
-            {/* Image container */}
-            <div className="flex gap-5 flex-wrap justify-center">
-              {sponsorData.tshirtPartner.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className="md:w-16 w-13 h-auto object-cover"
-                />
-              ))}
-            </div>
-          </div>
-          {/* star logo div  */}
-          <div className="absolute -bottom-18 -right-19 md:block hidden">
-            <img
-              src={star_logo}
-              alt=""
-              className="animate-spin-slow"
-              style={{
-                animation: "spin 8s linear infinite",
-              }}
-            />
-          </div>
-        </div>
+        </FadeIn>
       </div>
       <style>
         {`
