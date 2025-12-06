@@ -297,7 +297,7 @@ const Home = () => {
         </section>
       </div>
 
-      {/* Add shimmer animation */}
+      {/* shimmer animation */}
       <style>{`
         @keyframes shimmer {
           0% {
