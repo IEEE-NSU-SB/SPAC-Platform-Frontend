@@ -1,0 +1,37 @@
+  const scheduleData = [
+    {
+      title: "Registration & Reporting",
+      time: "08:00 - 08:30 AM",
+      description: "Show your QR Code (sent-via-mail) at the booth",
+    },
+    {
+      title: "Breakfast and Ice-Breaking",
+      time: "08:30 - 09:00 AM",
+      description: "Network with fellow attendees and enjoy refreshments",
+    },
+    {
+      title: "SPAC Opening Ceremony",
+      time: "09:00 - 09:30 AM",
+      description: "Official welcome and introduction to SPAC 2025",
+    },
+    {
+      title: "Keynote Speaker Session",
+      time: "09:30 - 10:30 AM",
+      description: "Featured industry expert presentation",
+    },
+    {
+      title: "Panel Discussion",
+      time: "10:30 - 11:30 AM",
+      description: "Interactive session with professionals",
+    },
+    {
+      title: "Lunch Break",
+      time: "11:30 AM - 01:00 PM",
+      description: "Networking lunch with speakers and attendees",
+    },
+    {
+      title: "Closing Ceremony",
+      time: "01:00 - 02:00 PM",
+      description: "Awards and final remarks",
+    },
+  ];

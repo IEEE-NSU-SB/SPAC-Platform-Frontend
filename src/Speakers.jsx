@@ -69,7 +69,7 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
 
       <div className="relative -mt-12 md:-mt-16 z-20">
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
-          <div className="space-y-10 md:space-y-12">
+          {/* <div className="space-y-10 md:space-y-12">
             {speakersData.map((speaker, index) => (
               <div
                 key={index}
@@ -83,7 +83,6 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
                     className="md:w-[400px] object-cover"
                     />
 
-                  {/* Speaker Details */}
                   <div className="md:w-2/3 p-6 md:p-8">
                     <div className="flex items-start justify-between mb-4">
                       <div>
@@ -96,7 +95,6 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
                       </div>
                     </div>
 
-                    {/* <div className="formal-divider my-6"></div> */}
 
                     <p className="text-gray-700 text-base leading-relaxed text-justify whitespace-pre-line">
                       {speaker.description}
@@ -105,7 +103,15 @@ He also leads the Apurba–NSU R&D Lab, which has made significant contributions
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+            <div className="text-center py-20">
+              <h2 className="text-3xl font-bold text-ieee-darkblue mb-4">
+                Speakers will be updated soon
+              </h2>
+              <p className="text-gray-600">
+                Stay tuned for the official SPAC 2025 speakers.
+              </p>
+            </div>
         </div>
       </div>
     </div>
