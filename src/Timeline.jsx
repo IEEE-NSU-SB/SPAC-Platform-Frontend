@@ -81,21 +81,17 @@ const Timeline = () => {
 
         <div className="relative -mt-12 md:-mt-16 z-20">
           <div className="max-w-[1050px] mx-auto px-6 md:px-10 py-16 md:py-24">
-            {scheduleData.map((data, index) => (
+            {/* {scheduleData.map((data, index) => (
               <div
                 key={index}
                 className="flex group scroll-animate"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Timeline Column */}
                 <div className="flex flex-col items-center mr-6">
-                  {/* Node Circle */}
                   <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-ieee-orange-75 border-2 border-white shadow-lg z-10 flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:bg-ieee-orange group-hover:shadow-xl" />
 
-                  {/* Connecting Line (only if not the last item) */}
                   {index !== scheduleData.length - 1 && (
                     <div className="md:h-35 h-58 w-[2px] bg-ieee-darkblue relative mb-1 transition-all duration-300 group-hover:bg-ieee-cyan">
-                      {/* Arrow Head */}
                       <div className="absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-1/2 scale-200 text-ieee-darkblue transition-colors duration-300 group-hover:text-ieee-cyan">
                         <svg
                           width="10"
@@ -114,7 +110,6 @@ const Timeline = () => {
                   )}
                 </div>
 
-                {/* Content Column */}
                 <div className="pb-8 pt-0.5 flex-1">
                   <div className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:translate-x-1">
                     <h3 className="text-xl md:text-2xl font-bold text-ieee-darkblue mb-2 transition-colors duration-300 group-hover:text-ieee-blue">
@@ -134,7 +129,15 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
+          <div className="text-center py-20">
+              <h2 className="text-3xl font-bold text-ieee-darkblue mb-4">
+                Timeline will be updated soon
+              </h2>
+              <p className="text-gray-600">
+                Stay tuned for the official SPAC 2025 schedule.
+              </p>
+            </div>
           </div>
         </div>
       </div>

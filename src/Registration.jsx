@@ -6,7 +6,7 @@ const Registration = () => {
 
   // Change this to control the registration state
   // Options: "coming-soon", "open", "closed"
-  const [registrationStatus] = useState("open"); // Change this value
+  const [registrationStatus] = useState("coming-soon"); // Change this value
 
   useEffect(() => {
     document.title = "Registration | SPAC 2025";
@@ -166,7 +166,7 @@ const Registration = () => {
                 </div>
 
                 {/* Registration Form - Only when Open */}
-                {registrationStatus === "open" && (
+                {registrationStatus === "coming-soon" && (
                   <div>
                     <button
                       onClick={handleLink}

@@ -1,18 +1,20 @@
 import { useEffect, useRef } from "react";
-import ieee_logo from "./assets/collaborator-logo/ieee-logo.png";
-import ieee_logo_bd from "./assets/collaborator-logo/ieee-bd-logo.png";
-import nsu_logo from "./assets/collaborator-logo/nsu-logo.png";
-import nsu_yf_logo from "./assets/collaborator-logo/ieee-yf.png";
-import ieee_nsu_sb from "./assets/collaborator-logo/ieee-nsu-sb-logo.png";
+import collab1 from "./assets/collaborator-logo/collab1.png";
+import collab2 from "./assets/collaborator-logo/collab2.png";
+// import collab3 from "./assets/collaborator-logo/collab3.png";
+import collab4 from "./assets/collaborator-logo/collab4.png";
+// import collab5 from "./assets/collaborator-logo/collab5.png";
+import collab6 from "./assets/collaborator-logo/collab6.png";
 import FadeIn from "./FadeIn";
 
 const Collaborator = () => {
   const collaboratorImages = [
-    ieee_logo,
-    ieee_logo_bd,
-    nsu_logo,
-    nsu_yf_logo,
-    ieee_nsu_sb,
+    collab1,
+    collab2,
+    // collab3,
+    collab4,
+    // collab5,
+    collab6,
   ];
 
   const marqueeRef = useRef(null);
