@@ -1,3 +1,4 @@
+import ieeensusb from './assets/collaborator-logo/collab2.png';
 
 const Footer = () => {
     // Links data structure
@@ -15,12 +16,9 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-400 pb-8 mb-4">
 
                     {/* Logo/Identity Area */}
-                    <div className="mb-8 md:mb-0 text-center md:text-left max-md:mx-auto">
+                    <div className="md:w-50 w-40 max-md:mx-auto max-md:mb-6">
                         {/* Mock Logo Text - use a white text for visibility */}
-                        <h2 className="text-4xl font-extrabold tracking-widest">IEEE NSU</h2>
-                        <p className="text-lg font-extrabold tracking-widest uppercase border-b-4 border-white pb-1 inline-block">
-                            Student Branch
-                        </p>
+                        <img src={ieeensusb} alt="IEEE NSU Student Branch" className='w-full h-full' />
                     </div>
 
                     {/* Quick Links Area */}
