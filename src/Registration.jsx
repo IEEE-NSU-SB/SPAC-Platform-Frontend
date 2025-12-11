@@ -166,7 +166,7 @@ const Registration = () => {
                 </div>
 
                 {/* Registration Form - Only when Open */}
-                {registrationStatus === "coming-soon" && (
+                {registrationStatus === "open" && (
                   <div>
                     <button
                       onClick={handleLink}
