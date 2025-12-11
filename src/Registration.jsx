@@ -36,7 +36,7 @@ const Registration = () => {
   }, []);
 
   const handleLink = () => {
-    window.location.href = "https://www.facebook.com/";
+    window.location.href = "https://registration.spac25.ieeensusb.org/";
   };
 
   // Content based on registration status
