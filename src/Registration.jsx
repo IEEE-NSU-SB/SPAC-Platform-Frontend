@@ -36,7 +36,7 @@ const Registration = () => {
   }, []);
 
   const handleLink = () => {
-    window.location.href = "https://www.facebook.com/";
+    window.location.href = "https://registration.spac25.ieeensusb.org/";
   };
 
   // Content based on registration status
@@ -166,7 +166,7 @@ const Registration = () => {
                 </div>
 
                 {/* Registration Form - Only when Open */}
-                {registrationStatus === "coming-soon" && (
+                {registrationStatus === "open" && (
                   <div>
                     <button
                       onClick={handleLink}

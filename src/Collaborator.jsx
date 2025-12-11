@@ -5,10 +5,12 @@ import collab2 from "./assets/collaborator-logo/collab2.png";
 import collab4 from "./assets/collaborator-logo/collab4.png";
 // import collab5 from "./assets/collaborator-logo/collab5.png";
 import collab6 from "./assets/collaborator-logo/collab6.png";
+import nsu from "./assets/collaborator-logo/nsu-logo.png";
 import FadeIn from "./FadeIn";
 
 const Collaborator = () => {
   const collaboratorImages = [
+    nsu,
     collab1,
     collab2,
     // collab3,
