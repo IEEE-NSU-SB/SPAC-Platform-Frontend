@@ -13,6 +13,7 @@ import ScrollToTop from "./scrollToTop";
 
 import SpacLoader from "./SpacLoader";
 import TopScroll from "./TopScroll";
+import Error404 from "./Error404";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -61,6 +62,7 @@ const App = () => {
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/404" element={<Error404 />} />
       </Routes>
 
       <Footer />
