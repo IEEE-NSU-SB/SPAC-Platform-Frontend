@@ -130,7 +130,7 @@ const Home = () => {
             </div> */}
 
               {/* Register Button - Formal & Professional */}
-              {/* <div className="animate-fade-in-up animation-delay-800">
+              <div className="animate-fade-in-up animation-delay-800">
                 <Link
                   to="/registration"
                   className="group relative inline-flex items-center justify-center
@@ -147,18 +147,18 @@ const Home = () => {
                   active:scale-95
                   will-change-transform"
                 >
-                   Background Gradient Effect 
+                   {/* Background Gradient Effect  */}
                   <span className="absolute inset-0 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue 
                   opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
 
-                  Animated Border Glow
+                  {/* Animated Border Glow */}
                   <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
                       background: 'linear-gradient(90deg, transparent, rgba(0,181,226,0.5), transparent)',
                       animation: 'shimmer 2s infinite',
                     }}></span>
 
-                  Button Content
+                  {/* Button Content */}
                   <span className="relative z-10 flex items-center gap-3">
                     <svg
                       className="w-4 h-4 md:w-5 md:h-5"
@@ -179,7 +179,7 @@ const Home = () => {
                     </svg>
                   </span>
                 </Link>
-              </div> */}
+              </div>
 
               {/* Bottom Formal Line */}
               {/* <div className="animate-fade-in-up animation-delay-900 mt-10 md:mt-14">
