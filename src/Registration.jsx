@@ -6,7 +6,7 @@ const Registration = () => {
 
   // Change this to control the registration state
   // Options: "coming-soon", "open", "closed"
-  const [registrationStatus] = useState("coming-soon"); // Change this value
+  const [registrationStatus] = useState("open"); // Change this value
 
   useEffect(() => {
     document.title = "Registration | SPAC 2025";
@@ -174,6 +174,7 @@ const Registration = () => {
                     >
                       Register Now
                     </button>
+                    <p className="mt-5">Note: If the registration link doesn’t load, please try using a VPN of your choice.</p>
                   </div>
                 )}
 
