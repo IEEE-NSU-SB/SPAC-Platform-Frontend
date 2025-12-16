@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
@@ -11,23 +11,50 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import ScrollToTop from "./scrollToTop";
 
-import SpacLoader from "./SpacLoader"; // <-- your loader
+import SpacLoader from "./SpacLoader";
+import TopScroll from "./TopScroll";
+import Error404 from "./Error404";
 
 const App = () => {
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    let done = false;
+
+    // 💠 Function that safely ends loading
+    const finishLoading = () => {
+      if (!done) {
+        done = true;
+        setLoading(false);
+      }
+    };
+
+    // 💠 CASE 1: If page already loaded (common on mobile)
+    if (document.readyState === "complete") {
+      finishLoading();
+    }
+
+    // 💠 CASE 2: Listen for full window load
+    window.addEventListener("load", finishLoading);
+
+    // 💠 CASE 3: Fallback in case load event is skipped
+    const failSafe = setTimeout(finishLoading, 1200);
+
+    return () => {
+      window.removeEventListener("load", finishLoading);
+      clearTimeout(failSafe);
+    };
   }, []);
 
-  // show loader first
+  // Show loader until loading is finished
   if (loading) return <SpacLoader />;
 
   return (
     <BrowserRouter>
+      <TopScroll />
       <ScrollToTop />
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/timeline" element={<Timeline />} />
@@ -35,7 +62,9 @@ const App = () => {
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
