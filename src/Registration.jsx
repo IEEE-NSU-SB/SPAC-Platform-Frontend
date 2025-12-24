@@ -6,7 +6,7 @@ const Registration = () => {
 
   // Change this to control the registration state
   // Options: "coming-soon", "open", "closed"
-  const [registrationStatus] = useState("open"); // Change this value
+  const [registrationStatus] = useState("closed"); // Change this value
 
   useEffect(() => {
     document.title = "Registration | SPAC 2025";
