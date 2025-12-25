@@ -130,11 +130,60 @@ const Home = () => {
             </div> */}
 
               {/* Register Button - Formal & Professional */}
-              {/* <div className="animate-fade-in-up animation-delay-800">
+            <div className="flex gap-5 max-md:flex-wrap">
+              <div className="animate-fade-in-up animation-delay-800">
                 <Link
-                  to="/registration"
+                  to="https://www.facebook.com/share/1ASEhskhYe/"
+                  target="blank"
                   className="group relative inline-flex items-center justify-center
-                  px-10 md:px-16 lg:px-20
+                  px-5 md:px-16 lg:px-15
+                  py-4 md:py-5 lg:py-6
+                  text-sm md:text-base lg:text-lg
+                  font-bold uppercase tracking-[0.2em]
+                  text-white
+                  bg-ieee-darkblue
+                  border-2 border-ieee-cyan
+                  overflow-hidden
+                  transition-all duration-500 ease-out
+                  hover:shadow-[0_0_40px_rgba(0,181,226,0.5)]
+                  active:scale-95
+                  will-change-transform"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue 
+                  opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+                  <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{
+                      background: 'linear-gradient(90deg, transparent, rgba(0,181,226,0.5), transparent)',
+                      animation: 'shimmer 2s infinite',
+                    }}></span>
+
+                  <span className="relative z-10 flex items-center gap-3">
+                    <svg
+                      className="w-4 h-4 md:w-5 md:h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12H16l-.4 3h-2.3v7A10 10 0 0022 12z" />
+                    </svg>
+                    Facebook Event
+                    <svg
+                      className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <div className="animate-fade-in-up animation-delay-800">
+                <Link
+                  to="https://ieeensusb.org/mega-event/24/"
+                  target="blank"
+                  className="group relative inline-flex items-center justify-center
+                  px-5 md:px-16 lg:px-15
                   py-4 md:py-5 lg:py-6
                   text-sm md:text-base lg:text-lg
                   font-bold uppercase tracking-[0.2em]
@@ -163,9 +212,20 @@ const Home = () => {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 2a10 10 0 100 20 10 10 0 000-20z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M2 12h20M12 2c2.5 2.7 4 6.2 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.2-4-10s1.5-7.3 4-10z"
+                      />
                     </svg>
-                    Register Now
+                    Website Event
                     <svg
                       className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
                       fill="none"
@@ -176,12 +236,14 @@ const Home = () => {
                     </svg>
                   </span>
                 </Link>
-              </div> */}
-
+              </div>
+            </div>
               {/* Bottom Formal Line */}
               {/* <div className="animate-fade-in-up animation-delay-900 mt-10 md:mt-14">
               <div className="formal-divider"></div>
               </div> */}
+
+              
             </div>
           </FadeIn>
         </div>

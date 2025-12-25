@@ -35,40 +35,90 @@ const Timeline = () => {
 
   const scheduleData = [
     {
-      title: "Registration & Reporting",
-      time: "08:00 - 08:30 AM",
+      title: "Participant Reporting & Registration",
+      time: "8:30 AM - 9:00 AM",
       description: "Show your QR Code (sent-via-mail) at the booth",
     },
     {
-      title: "Breakfast and Ice-Breaking",
-      time: "08:30 - 09:00 AM",
+      title: "Breakfast and Orientation",
+      time: "9:00 AM - 9:30 AM",
       description: "Network with fellow attendees and enjoy refreshments",
     },
     {
-      title: "SPAC Opening Ceremony",
-      time: "09:00 - 09:30 AM",
-      description: "Official welcome and introduction to SPAC 2025",
+      title: "Inaugural ceremony",
+      time: "9:30 AM - 10:00 AM",
     },
     {
-      title: "Keynote Speaker Session",
-      time: "09:30 - 10:30 AM",
-      description: "Featured industry expert presentation",
+      title: `Harnessing Solar Energy:
+      Powering a Clean and
+      Sustainable Future`,
+      time: "10:00 AM - 10:40 AM",
     },
     {
-      title: "Panel Discussion",
-      time: "10:30 - 11:30 AM",
-      description: "Interactive session with professionals",
+      title: `Creating Your Own Market: A
+      Guide to Innovative
+      Entrepreneurship`,
+      time: "10:40 AM - 11:20 AM",
     },
     {
-      title: "Lunch Break",
-      time: "11:30 AM - 01:00 PM",
-      description: "Networking lunch with speakers and attendees",
+      title: `Sustainable Energy
+      Technologies for Bangladesh’s
+      Future: Opportunities,
+      Challenges, and Global
+      Perspectives`,
+      time: "11:20 AM - 12:00 PM",
     },
     {
-      title: "Closing Ceremony",
-      time: "01:00 - 02:00 PM",
-      description: "Awards and final remarks",
+      title: `Engineering High
+      Performance Connectivity
+      (MDE & IoT) Solutions
+      `,
+      time: "12:00 PM - 12:40 PM",
     },
+    {
+      title: `Lunch And Prayer Break`,
+      time: "12:40 PM - 2:00 PM",
+    },
+    {
+      title: `Panel Discussion
+“AI in the Enterprise: Hype,
+Reality, and Engineering
+Challenges”`,
+      time: "2:00 PM - 3:20 PM",
+    },
+    {
+      title: `The Journey Toward Localized
+Hardware Manufacturing in
+Bangladesh`,
+      time: "3:20 PM - 4:00 PM",
+    },
+    {
+      title: `Competition`,
+      time: "4:20 PM - 5:45 PM",
+    },
+    {
+      title: `Break and Evening Snacks`,
+      time: "5:45 PM - 6:00 PM",
+    },
+    {
+      title: `Diversity and Inclusion for
+Women
+Empowerment;Retention and
+Advancement
+`,
+      time: "6:00 PM - 7:00 PM",
+    },
+    {
+      title: `Closing Ceremony with Prize
+Giving
+`,
+      time: "7:00 PM - 8:00 PM",
+    },
+    {
+      title: `Cultural and Dinner
+`,
+      time: "8:00 PM - 9:00 PM",
+    }
   ];
 
   return (
@@ -81,7 +131,7 @@ const Timeline = () => {
 
         <div className="relative -mt-12 md:-mt-16 z-20">
           <div className="max-w-[1050px] mx-auto px-6 md:px-10 py-16 md:py-24">
-            {/* {scheduleData.map((data, index) => (
+            {scheduleData.map((data, index) => (
               <div
                 key={index}
                 className="flex group scroll-animate"
@@ -129,15 +179,15 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-            ))} */}
-          <div className="text-center py-20">
+            ))}
+          {/* <div className="text-center py-20">
               <h2 className="text-3xl font-bold text-ieee-darkblue mb-4">
                 Timeline will be updated soon
               </h2>
               <p className="text-gray-600">
                 Stay tuned for the official SPAC 2025 schedule.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
