@@ -130,7 +130,7 @@ const Home = () => {
             </div> */}
 
               {/* Register Button - Formal & Professional */}
-            <div className="flex gap-5 max-md:flex-wrap">
+            <div className="flex gap-5 max-md:flex-wrap items-center mx-auto justify-center">
               <div className="animate-fade-in-up animation-delay-800">
                 <Link
                   to="https://www.facebook.com/share/1ASEhskhYe/"
@@ -147,7 +147,7 @@ const Home = () => {
                   transition-all duration-500 ease-out
                   hover:shadow-[0_0_40px_rgba(0,181,226,0.5)]
                   active:scale-95
-                  will-change-transform"
+                  will-change-transform max-md:w-70"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue 
                   opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
@@ -194,7 +194,7 @@ const Home = () => {
                   transition-all duration-500 ease-out
                   hover:shadow-[0_0_40px_rgba(0,181,226,0.5)]
                   active:scale-95
-                  will-change-transform"
+                  will-change-transform max-md:w-70"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-ieee-blue via-ieee-cyan to-ieee-blue 
                   opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>

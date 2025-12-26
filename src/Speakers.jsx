@@ -1,11 +1,14 @@
 import { useEffect, useRef } from "react";
 import SectionHeadingBG from "./SectionHeadingBG";
-import speaker from "./assets/speakers/speaker1.png";
+import speaker from "./assets/speakers/Celia.jpeg";
+import speaker1 from "./assets/speakers/Dr. Fariah Mahzabeen.jpg";
 import speaker2 from "./assets/speakers/Dr. Mahmud Abdul Matin Bhuiyan.jpeg";
 import speaker3 from "./assets/speakers/Md Touhidur Rahman Rad.png"
 import speaker4 from "./assets/speakers/Md Shofiul Alam.png"
 import speaker5 from "./assets/speakers/Shafqat Asif.png"
 import speaker6 from "./assets/speakers/Zuberul.jpeg"
+import speaker7 from "./assets/speakers/Yeaminul Islam.jpg"
+import speaker8 from "./assets/speakers/Dr. Md Khan Sobayel Bin Rahiq.jpeg"
 import { image } from "framer-motion/client";
 const Speakers = () => {
   const observerRef = useRef(null);
@@ -38,14 +41,16 @@ const Speakers = () => {
   }, []);
 
   const speakersData = [
-//     {
-//       name: "Celia",
-//       title: "Associate Professor",
-//       image: speaker,
-//       description: `Dr. Nabeel Mohammad is a distinguished academic and researcher with a Bachelor's degree in Computer Science from Monash University, Australia. He began his career as a Software Developer at Editure Ltd., before transitioning into academia to pursue his PhD at Monash University. His doctoral research focused on unsupervised image feature extraction and its applications in content-based image retrieval.
-//       Dr. Nabeel's current research interests span Computer Vision and Natural Language Processing, with additional expertise in Artificial Intelligence, Robotics, and Signal & Image Processing. He is deeply passionate about industry–academia collaboration and has successfully partnered with organizations such as Apurba Technologies, HeadBlocks, Giga Tech Ltd., and others.
-// He also leads the Apurba–NSU R&D Lab, which has made significant contributions to AI projects in collaboration with Apurba Technologies—further demonstrating his commitment to bridging the gap between academic research and real-world applications.`
-//     },
+    {
+      name: "Dr. Celia Shahnaz",
+      image: speaker,
+      description: `Dr. Celia Shahnaz is a distinguished leader in the global IEEE community. She currently serves as Chair of the IEEE WIE Nominations and Appointments Committee for 2025–26. She was Chair of the IEEE WIE Committee during 2023–24, making impactful contributions to empower women in engineering. Dr. Shahnaz also leads as Chair of the IEEE Computer Society Awards Committee for 2024–25. She has been recognized as an IEEE Computer Society Distinguished Visitor for 2025–27. Her leadership roles reflect a long-standing dedication to advancing technology and professional development worldwide. She has guided and mentored countless professionals through her active involvement in IEEE. As Advisor of IEEE Young Professionals Bangladesh, she continues to inspire the next generation of engineers. Her vision emphasizes inclusion, innovation, and excellence in engineering and technology. Dr. Shahnaz is admired globally for her commitment, leadership, and contributions to the IEEE community.`
+    },
+    {
+      name: "Dr. Fariah Mahzabeen",
+      image: speaker1,
+      description: `Dr. Fariah Mahzabeen is a respected academic and researcher in the field of engineering and technology. She is currently serving as an Assistant Professor at North South University. Her academic contributions span teaching, research, and mentoring future professionals. Dr. Mahzabeen has been actively involved in research projects addressing real-world challenges. Her work reflects a balance of theoretical knowledge and practical applications. She has published and contributed to advancing academic knowledge in her field. Through her teaching, she inspires students to pursue excellence in engineering. She has been engaged in initiatives that bridge academia and industry collaboration. Her dedication extends to nurturing innovation and research-driven learning. Dr. Mahzabeen is widely recognized for her commitment to education, research, and professional growth.`
+    },
     {
       name: "Dr. Mahmud Abdul Matin Bhuiyan",
       image: speaker2,
@@ -84,7 +89,21 @@ Mr. Asif’s industry exposure and leadership experience make this seminar a val
 
 An 18-year veteran of the tech industry, Zuberul leads a strong team of 120 engineers delivering cutting-edge Innovative Solutions. A specialist in protocol implementation with multiple patents in the Connectivity domain, he excels at bridging the gap between complex connectivity and seamless user experiences.
 `
-    }
+    },
+    {
+      name:"Yeaminul Islam",
+      image:speaker7,
+      description:`Yeaminul Islam is an accomplished Engineering Manager and Senior Solution Architect at Banglalink, with over a decade of experience in designing and leading large-scale digital platforms within the telecom industry. He has played a pivotal role in driving AI-led transformation, building robust, carrier-grade systems that support millions of users.
+His expertise spans telecom charging and billing systems, CRM, VAS platforms, API middleware, enterprise integration, and high-performance microservices architectures. Yeaminul has also worked extensively with AI and machine learning technologies, including deep neural networks and classical ML algorithms, applying them to classification, regression and generative automation use cases.
+A graduate of Khulna University of Engineering & Technology (KUET), he is highly regarded for his strength in solution design, product lifecycle management and leading high-performance engineering teams. His work focuses on building scalable, low-latency systems that translate complex business requirements into impactful technological solutions.`
+    },
+    {
+      name:"Dr. Md Khan Sobayel Bin Rahiq",
+      image:speaker8,
+      description:`Dr. Md. Khan Sobayel Bin Rafiq is a seasoned professional with over 20 years of combined experience spanning corporate leadership, academia, research, and military service. Currently serving as the Deputy General Manager at Nasir Group of Industries, he plays a pivotal role in advancing Bangladesh’s EV automobile industry and its associated components, contributing significantly to sustainable and green mobility initiatives.
+Dr. Rafiq has demonstrated excellence in research, particularly in solar photovoltaics, while also securing major research grants and overseeing large-scale academic and industrial projects. His expertise lies in leading complex investigations, managing multidisciplinary teams, and implementing efficient administrative and operational systems.
+With a unique ability to balance high-level strategic planning and hands-on research and operations, Dr. Rafiq brings a disciplined, innovative, and results-driven approach to every endeavor. His professional journey reflects a strong commitment to innovation, sustainability, and impactful leadership, making him a distinguished voice in industry–academia collaboration and future-focused engineering development.`
+    },
   ];
 
   // Helper function to get initials from name
