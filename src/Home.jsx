@@ -354,9 +354,9 @@ const Home = () => {
         </div>
 
         {/* Sponsors - With Animation */}
-        {/* <div className="my-16 md:my-20" style={{ marginTop: "0" }}>
+        <div className="my-16 md:my-20" style={{ marginTop: "0" }}>
           <Sponsors />
-        </div> */}
+        </div>
 
         {/* Last Year SPAC - With Animation */}
         <section className="scroll-animate w-full my-16 md:my-20">
