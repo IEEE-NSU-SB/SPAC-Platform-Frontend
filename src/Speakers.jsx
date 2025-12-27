@@ -98,7 +98,7 @@ His expertise spans telecom charging and billing systems, CRM, VAS platforms, AP
 A graduate of Khulna University of Engineering & Technology (KUET), he is highly regarded for his strength in solution design, product lifecycle management and leading high-performance engineering teams. His work focuses on building scalable, low-latency systems that translate complex business requirements into impactful technological solutions.`
     },
     {
-      name:"Dr. Md Khan Sobayel Bin Rahiq",
+      name:"Dr. Md Khan Sobayel Bin Rafiq",
       image:speaker8,
       description:`Dr. Md. Khan Sobayel Bin Rafiq is a seasoned professional with over 20 years of combined experience spanning corporate leadership, academia, research, and military service. Currently serving as the Deputy General Manager at Nasir Group of Industries, he plays a pivotal role in advancing Bangladesh’s EV automobile industry and its associated components, contributing significantly to sustainable and green mobility initiatives.
 Dr. Rafiq has demonstrated excellence in research, particularly in solar photovoltaics, while also securing major research grants and overseeing large-scale academic and industrial projects. His expertise lies in leading complex investigations, managing multidisciplinary teams, and implementing efficient administrative and operational systems.
