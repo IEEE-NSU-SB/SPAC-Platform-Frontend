@@ -95,11 +95,7 @@ Bangladesh`,
       time: "5:45 PM - 6:00 PM",
     },
     {
-      title: `Diversity and Inclusion for
-Women
-Empowerment;Retention and
-Advancement
-`,
+      title: `Deep Learning for Research and Innovation`,
       time: "6:00 PM - 7:00 PM",
     },
     {
