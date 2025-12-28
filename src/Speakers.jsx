@@ -9,6 +9,7 @@ import speaker5 from "./assets/speakers/Shafqat Asif.png"
 import speaker6 from "./assets/speakers/Zuberul.jpeg"
 import speaker7 from "./assets/speakers/Yeaminul Islam.jpg"
 import speaker8 from "./assets/speakers/Dr. Md Khan Sobayel Bin Rahiq.jpeg"
+import speaker9 from "./assets/speakers/speaker9.jpeg"
 import { image } from "framer-motion/client";
 const Speakers = () => {
   const observerRef = useRef(null);
@@ -83,11 +84,11 @@ Mr. Asif’s industry exposure and leadership experience make this seminar a val
 `
     },
     {
-      name:"Zuberul",
+      name:"Mohammad Zuberul Islam",
       image:speaker6,
-      description:`Zuberul is a Team Leader, Principal Engineer & Device-to-Device Connectivity expert in Samsung R&D Institute Bangladesh Ltd.
+      description:`Mohammad Zuberul Islam is a Team Leader, Principal Engineer & Device-to-Device Connectivity expert in Samsung R&D Institute Bangladesh Ltd.
 
-An 18-year veteran of the tech industry, Zuberul leads a strong team of 120 engineers delivering cutting-edge Innovative Solutions. A specialist in protocol implementation with multiple patents in the Connectivity domain, he excels at bridging the gap between complex connectivity and seamless user experiences.
+An 18-year veteran of the tech industry, Mohammad Zuberul Islam leads a strong team of 120 engineers delivering cutting-edge Innovative Solutions. A specialist in protocol implementation with multiple patents in the Connectivity domain, he excels at bridging the gap between complex connectivity and seamless user experiences.
 `
     },
     {
@@ -103,6 +104,15 @@ A graduate of Khulna University of Engineering & Technology (KUET), he is highly
       description:`Dr. Md. Khan Sobayel Bin Rafiq is a seasoned professional with over 20 years of combined experience spanning corporate leadership, academia, research, and military service. Currently serving as the Deputy General Manager at Nasir Group of Industries, he plays a pivotal role in advancing Bangladesh’s EV automobile industry and its associated components, contributing significantly to sustainable and green mobility initiatives.
 Dr. Rafiq has demonstrated excellence in research, particularly in solar photovoltaics, while also securing major research grants and overseeing large-scale academic and industrial projects. His expertise lies in leading complex investigations, managing multidisciplinary teams, and implementing efficient administrative and operational systems.
 With a unique ability to balance high-level strategic planning and hands-on research and operations, Dr. Rafiq brings a disciplined, innovative, and results-driven approach to every endeavor. His professional journey reflects a strong commitment to innovation, sustainability, and impactful leadership, making him a distinguished voice in industry–academia collaboration and future-focused engineering development.`
+    },
+    {
+      name:"Dr. Ariful Haque",
+      image:speaker9,
+      description:`Dr. Ariful Haque is an Assistant Professor of Electrical Engineering in the Ingram School of Engineering at Texas State University and a core faculty member in the Materials Science, Engineering & Commercialization (MSEC) Ph.D. program. Before joining Texas State, he garnered valuable industry experience at Intel Corporation in the Logic Technology Development (LTD) division, where he supported the development of next-generation semiconductor process technologies. Dr. Haque earned dual Ph.D. degrees in Electrical Engineering and in Materials Science & Engineering from North Carolina State University (NCSU). He also obtained a Master of Nanoengineering (specializing in nanoelectronics and nanophotonics) from NCSU, an M.S. in Materials Science from Missouri State University, and a B.Sc. in Electrical & Electronic Engineering from Bangladesh University of Engineering & Technology (BUET). Dr. Ariful Haque has secured and led multiple high-impact federal research grants that position his work at the forefront of ultrawide bandgap (UWBG) semiconductor innovation. Most notably, he is co-leading the NSF CREST Center for UWBG Semiconductor Device Materials. In addition, he serves as the principal investigator on several other Department of Defense (Army Research Office and Office of Naval Research) and NSF-funded projects in UWBG semiconductor field. He also leads several university-sponsored internal projects. Dr. Haque has authored over 60 peer-reviewed journal articles, including high-impact works in IEEE Transactions, alongside six conference proceedings and several book chapters. He also maintains a strong professional service portfolio, serving as an Associate Editor for the IEEE Electron Device Magazine and Frontiers in Carbon journal, a member of the IEEE Electronic Materials Technical Committee, an Advisory Board Member for Microelectronics-US 2026 in Austin, and an Organizing Committee member for the Electronic Materials Conference. He directs an active and growing research team that includes 2 postdoctoral researchers, 5 Ph.D. students, and 7 M.S. students.
+
+Website: https://faculty.txst.edu/profile/2325757  
+and https://ahaque.wp.txstate.edu/dr-ariful-haque/ 
+`
     },
   ];
 
@@ -142,7 +152,7 @@ With a unique ability to balance high-level strategic planning and hands-on rese
                   <div className="md:w-2/3 p-6 md:p-8">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-2xl md:text-3xl font-bold text-ieee-darkblue mb-2">
+                        <h3 className="text-2xl md:text-3xl font-bold text-ieee-darkblue mb-2 uppercase">
                           {speaker.name}
                         </h3>
                         <p className="text-lg font-semibold text-ieee-cyan mb-1">
