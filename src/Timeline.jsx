@@ -93,6 +93,7 @@ Bangladesh`,
     {
       title: `Competition`,
       time: "4:20 PM - 5:45 PM",
+      description:"Final round of Future Builders Hackathon"
     },
     {
       title: `Break and Evening Snacks`,
@@ -106,15 +107,16 @@ Bangladesh`,
     }
     ,
     {
-      title: `Closing Ceremony with Prize
-Giving
-`,
+      title: `Closing Ceremony with Prize Giving`,
       time: "7:00 PM - 8:00 PM",
     },
     {
-      title: `Cultural and Dinner
-`,
-      time: "8:00 PM - 9:00 PM",
+      title: `Vote of thanks`,
+      time: "8:00 PM - 8:15 PM",
+    },
+    {
+      title: `Cultural and Dinner`,
+      time: "8:15 PM - 9:00 PM",
     }
   ];
 
