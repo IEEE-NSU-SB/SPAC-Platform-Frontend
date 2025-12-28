@@ -6,6 +6,8 @@ import collab4 from "./assets/collaborator-logo/collab4.png";
 // import collab5 from "./assets/collaborator-logo/collab5.png";
 import collab6 from "./assets/collaborator-logo/collab6.png";
 import nsu from "./assets/collaborator-logo/nsu-logo.png";
+import ieeebd from "./assets/collaborator-logo/ieee-bd-logo.png";
+import ieeeyf from "./assets/collaborator-logo/ieee-yf.png";
 import FadeIn from "./FadeIn";
 
 const Collaborator = () => {
@@ -17,6 +19,8 @@ const Collaborator = () => {
     collab4,
     // collab5,
     collab6,
+    ieeebd,
+    ieeeyf
   ];
 
   const marqueeRef = useRef(null);
