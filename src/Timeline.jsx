@@ -52,7 +52,11 @@ const Timeline = () => {
       title: `Harnessing Solar Energy:
       Powering a Clean and
       Sustainable Future`,
-      time: "10:00 AM - 11:00 AM",
+      time: "10:00 AM - 10:40 AM",
+    },
+    {
+      title: `Deep Learning for Research and Innovation`,
+      time: "10:40 AM - 11:20 AM",
     },
     {
       title: `Sustainable Energy
@@ -60,18 +64,18 @@ const Timeline = () => {
       Future: Opportunities,
       Challenges, and Global
       Perspectives`,
-      time: "11:00 AM - 12:00 PM",
+      time: "11:20 AM - 12:00 PM",
     },
     {
       title: `Engineering High
       Performance Connectivity
       (MDE & IoT) Solutions
       `,
-      time: "12:00 PM - 1:00 PM",
+      time: "12:00 PM - 12:40 PM",
     },
     {
       title: `Lunch And Prayer Break`,
-      time: "1:00 PM - 2:00 PM",
+      time: "12:40 PM - 2:00 PM",
     },
     {
       title: `Panel Discussion
@@ -84,7 +88,7 @@ Challenges”`,
       title: `The Journey Toward Localized
 Hardware Manufacturing in
 Bangladesh`,
-      time: "3:20 PM - 4:20 PM",
+      time: "3:20 PM - 4:00 PM",
     },
     {
       title: `Competition`,
@@ -95,9 +99,12 @@ Bangladesh`,
       time: "5:45 PM - 6:00 PM",
     },
     {
-      title: `Deep Learning for Research and Innovation`,
+      title: `Bridging Research, Industry, and
+              Academia: Lessons from Intel
+              and U.S. Universities`,
       time: "6:00 PM - 7:00 PM",
-    },
+    }
+    ,
     {
       title: `Closing Ceremony with Prize
 Giving
